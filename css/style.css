@@ -1,0 +1,77 @@
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+#DISCLAIMER {
+    font-size: 10px;
+  
+}
+
+p {
+    
+    text-align: center;
+    font-family: 'Signatra';
+    font-style: italic;
+  
+}
+
+body {
+
+    background-color: black;
+    background-image: url(../../../media/navy-blue-painted-wall-texture.jpg);
+    color: #ff8f66;
+}
+
+h1 {
+    font-family:'Rubic-Bold';
+    text-decoration: underline;
+    color: #ff8f66;
+    font-style: normal; 
+    text-align: center;
+}
+
+
+/************** NAV BAR */
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 17px;
+    min-width: %35;
+}
+
+.topnav a:hover {
+    background-color: #99738E;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #553d67;
+
+    color: white;
+}
+
+/*************** HOME PAGE */
+
+#indexImage{
+    width:400px;
+}
+
+
+
+
+
