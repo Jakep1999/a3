@@ -30,7 +30,7 @@
                 <a href="#linktoNowShowing">Now Showing</a>
                 <a href="#linktoSynopsis">Synopsis</a>
                 <a href="#linktoBooking">Booking</a>
-                <a href="../index.php">Back to A1</a>
+                <a href="../index.html">Back to A1</a>
             </div>
         </nav>
 
