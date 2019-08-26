@@ -1,0 +1,18 @@
+ErrorDocument 403 "<html><head><script>window.location = 'https://' + window.location.hostname + window.location.pathname;<$
+SSLRequireSSL
+AuthName "Restricted Access"
+AuthType Kerberos
+Krb5Keytab  /etc/krb5.keytab
+KrbAuthRealms RMIT.INTERNAL
+KrbMethodNegotiate Off
+KrbMethodK5Passwd On
+KrbVerifyKDC off
+<RequireAny>
+
+
+# Below, replace 's1234567' with your sID and 's1234568' with your partner's sID if you have one
+
+  require user s3539595@RMIT.INTERNAL
+  require user s3719022@RMIT.INTERNAL
+
+# ^^ If assignments allow more partners, add more 'require user' lines
