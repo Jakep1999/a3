@@ -122,8 +122,8 @@
                  
 
                         <div class="nowShowingCard">
-<div class="poster_jpg">
-                            <img src="../../media/poster_endgame.jpg" alt="Endgame poster" >
+<div>
+                            <img src="../../media/poster_endgame.jpg" alt="Endgame poster" class="poster_jpg">
 </div>
 
                             <!-this should float to the side right of the poster->                            <div class="nowShowing_container">
@@ -140,8 +140,8 @@
 
 
                         <div class="nowShowingCard">
-<div class="poster_jpg">
-                            <img src="../../media/poster_topendwedding.jpg" alt="Top End Wedding poster">
+<div>
+                            <img src="../../media/poster_topendwedding.jpg" alt="Top End Wedding poster" class="poster_jpg">
 
 </div>
                             <!-this should float to the side right of the poster->                            <div class="nowShowing_container">
@@ -163,8 +163,8 @@
 
 
                         <div class="nowShowingCard">
-<div class="poster_jpg">
-                    <img src="../../media/poster_dumbo.jpg" alt="Dumbo poster">
+<div >
+                    <img src="../../media/poster_dumbo.jpg" alt="Dumbo poster" class="poster_jpg">
 </div>
                             <!-this should float to the side right of the poster->
 
@@ -184,8 +184,8 @@
 
                         <div class="nowShowingCard">
 
-<div class="poster_jpg">
-<img src="../../media/poster_thehappyprince.jpg" alt="The Happy Prince poster" class="poster_jpg">
+<div>
+<img src="../../media/poster_thehappyprince.jpg" alt="The Happy Prince poster" class="poster_jpg" class="poster_jpg">
 </div>
                             <!-this should float to the side right of the poster->
 

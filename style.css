@@ -13,7 +13,7 @@ body {
 
     background-color: black;
     color: #ff8f66;
-    top: 4;
+    top: 4; /*offset to avoid nav bar */
 }
 
 
