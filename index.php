@@ -125,77 +125,77 @@
 
 
             <section  id="linktoNowShowing">
-                
-                    <h1>Now Showing</h1>
 
-<article class="nowShowingCard">
-                    
-                        <div>
-                            <img src="../../media/poster_endgame.jpg" alt="Endgame poster" class="poster_jpg">
-                        </div>
+                <h1>Now Showing</h1>
 
-                        <!-this should float to the side right of the poster->                            <div class="nowShowing_container">
-                        <h2>Avengers: Endgame</h2>
+                <article class="nowShowingCard">
+
+                    <div>
+                        <img src="../../media/poster_endgame.jpg" alt="Endgame poster" class="poster_jpg">
+                    </div>
+
+                    <!-this should float to the side right of the poster->                            <div class="nowShowing_container">
+                    <h2>Avengers: Endgame</h2>
+                    <h3> SHOWING:</h3>
+                    <p>
+                        Wed - Fri: 9pm (T21)<br>
+                        Sat - Sun: 6pm (T18)<br>
+                    </p>
+                    </div>
+
+                </article>
+
+
+                <article class="nowShowingCard">
+                    <div>
+                        <img src="../../media/poster_topendwedding.jpg" alt="Top End Wedding poster" class="poster_jpg">
+
+                    </div>
+                    <!-this should float to the side right of the poster->                            <div class="nowShowing_container">
+                    <h2>Top End Wedding</h2>
+                    <h3> SHOWING:</h3>
+                    <p>
+                        Mon - Tues: 6pm (T18)<br>
+                        Sat - Sun: 3pm (T15)<br>
+                    </p>
+
+
+                    </div>
+                </article>
+
+                <article class="nowShowingCard">
+                    <div >
+                        <img src="../../media/poster_dumbo.jpg" alt="Dumbo poster" class="poster_jpg">
+                    </div>
+                    <!-this should float to the side right of the poster->
+
+                    <div class="nowShowing_container">
+                        <h2>Dumbo</h2>
                         <h3> SHOWING:</h3>
                         <p>
-                            Wed - Fri: 9pm (T21)<br>
-                            Sat - Sun: 6pm (T18)<br>
+                            Mon - Tues: 12pm (T12)<br>
+                            Wed - Fri: 6pm (T18)<br>
+                            Sat - Sun: 12pm (T12)<br>
                         </p>
-                        </div>
-                   
+
+                    </div>
                 </article>
 
-
                 <article class="nowShowingCard">
-                        <div>
-                            <img src="../../media/poster_topendwedding.jpg" alt="Top End Wedding poster" class="poster_jpg">
 
-                        </div>
-                        <!-this should float to the side right of the poster->                            <div class="nowShowing_container">
-                        <h2>Top End Wedding</h2>
+                    <div>
+                        <img src="../../media/poster_thehappyprince.jpg" alt="The Happy Prince poster" class="poster_jpg" class="poster_jpg">
+                    </div>
+                    <!-this should float to the side right of the poster->
+
+                    <div class="nowShowing_container">
+                        <h2>The Happy Prince</h2>
                         <h3> SHOWING:</h3>
                         <p>
-                            Mon - Tues: 6pm (T18)<br>
-                            Sat - Sun: 3pm (T15)<br>
+                            Wed - Fri: 12pm (T12)<br>
+                            Sat - Sun: 9pm (T21)<br>
                         </p>
-
-
-                        </div>
-                </article>
-
-                <article class="nowShowingCard">
-                        <div >
-                            <img src="../../media/poster_dumbo.jpg" alt="Dumbo poster" class="poster_jpg">
-                        </div>
-                        <!-this should float to the side right of the poster->
-
-                        <div class="nowShowing_container">
-                            <h2>Dumbo</h2>
-                            <h3> SHOWING:</h3>
-                            <p>
-                                Mon - Tues: 12pm (T12)<br>
-                                Wed - Fri: 6pm (T18)<br>
-                                Sat - Sun: 12pm (T12)<br>
-                            </p>
-
-                        </div>
-                </article>
-
-                <article class="nowShowingCard">
-
-                        <div>
-                            <img src="../../media/poster_thehappyprince.jpg" alt="The Happy Prince poster" class="poster_jpg" class="poster_jpg">
-                        </div>
-                        <!-this should float to the side right of the poster->
-
-                        <div class="nowShowing_container">
-                            <h2>The Happy Prince</h2>
-                            <h3> SHOWING:</h3>
-                            <p>
-                                Wed - Fri: 12pm (T12)<br>
-                                Sat - Sun: 9pm (T21)<br>
-                            </p>
-                        </div>
+                    </div>
                 </article>
 
             </section>
@@ -211,70 +211,70 @@
 
                 <h1>Synopsis</h1>
 
-                
-                
-                <article class="synopsisCard">
-                        <div class="synopsis_container">
-                            <h2>Dumbo - [G]</h2>
-                            <h3> Plot Description:</h3>
-                            <p>
-                                Crazy kids movie about some elephant that does stuff
-                            </p>
-                        </div>
 
-                        <!–this should float to the right of the title/description->                        
-                        <div class="video_trailer">
-                            <iframe src="https://www.youtube.com/embed/7NiYVoqBt-8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+
+                <article class="synopsisCard">
+                    <div class="synopsis_container">
+                        <h2>Dumbo - [G]</h2>
+                        <h3> Plot Description:</h3>
+                        <p>
+                            Crazy kids movie about some elephant that does stuff
+                        </p>
+                    </div>
+
+                    <!–this should float to the right of the title/description->                        
+                    <div class="video_trailer">
+                        <iframe src="https://www.youtube.com/embed/7NiYVoqBt-8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </article>
 
 
                 <article class="synopsisCard">
-                 
-                            <h2>Avengers: Endgame - [MA15+]</h2>
-                            <h3> Plot Description:</h3>
-                            <p>
-                                The avengers are at it again, avenging all sorts of things when and wherever they please
-                            </p>
 
-                        <!–this should float to the right of the title/description->                        
+                    <h2>Avengers: Endgame - [MA15+]</h2>
+                    <h3> Plot Description:</h3>
+                    <p>
+                        The avengers are at it again, avenging all sorts of things when and wherever they please
+                    </p>
+
+                    <!–this should float to the right of the title/description->                        
                     <div class="video_trailer">
                         <iframe src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-          
+                    </div>
+
                 </article>
 
 
                 <article class="synopsisCard">
-                            <h2>The Happy Prince - [PG13+]</h2>
-                            <h3> Plot Description:</h3>
-                            <p>
-                                How could one prince possibly be so happy?? Find out in this period comedu
-                            </p>
+                    <h2>The Happy Prince - [PG13+]</h2>
+                    <h3> Plot Description:</h3>
+                    <p>
+                        How could one prince possibly be so happy?? Find out in this period comedu
+                    </p>
 
 
-                        <!–this should float to the right of the title/description->                        
+                    <!–this should float to the right of the title/description->                        
                     <div class="video_trailer">
                         <iframe src="https://www.youtube.com/embed/4HmN9r1Fcr8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                        </div>
+                    </div>
 
 
                 </article>
 
 
                 <article class="synopsisCard">
-                            <h2>Top End Wedding - [M]</h2>
-                            <h3> Plot Description:</h3>
-                            <p>
-                                A celebration of love, family and belonging, set at a wedding for top ends.
-                            </p>
+                    <h2>Top End Wedding - [M]</h2>
+                    <h3> Plot Description:</h3>
+                    <p>
+                        A celebration of love, family and belonging, set at a wedding for top ends.
+                    </p>
 
 
-                        <!-this should float to the right of the title/description->
-                        <div class="video_trailer">
-                            <iframe src="https://www.youtube.com/embed/uoDBvGF9pPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+                    <!-this should float to the right of the title/description->
+                    <div class="video_trailer">
+                        <iframe src="https://www.youtube.com/embed/uoDBvGF9pPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
 
                 </article>
             </section>
