@@ -57,7 +57,8 @@ body {
 }
 
 .nowShowing_container{
-    float:left;
+    float:none;
+    float:right;
 }
 
 
