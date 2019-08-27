@@ -54,10 +54,11 @@ body {
 
 .poster_jpg {
     width:200px;
+    float:left;
 }
 
 .nowShowing_container{
-    float:none;
+
     float:right;
 }
 
