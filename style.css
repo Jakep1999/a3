@@ -54,12 +54,11 @@ body {
 
 .poster_jpg {
     width:200px;
-    float:left;
 }
 
-.nowShowing_container{
+.nowShowing_card{
 
-    float:right;
+    float:left;
 }
 
 
