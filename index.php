@@ -67,7 +67,7 @@
                     <br>
                     <br>
                     <h1>Prices </h1>
-                    <P>
+             
                         <table>
                             <tr>
                                 <th>Seat Type</th>
@@ -112,7 +112,7 @@
                                 <td>24.00</td>
                             </tr>
                         </table>
-                    </P>
+
                 </article>
 
 
@@ -120,11 +120,13 @@
                     <br>
                     <br>
                     <h1>Now Showing</h1>
-                    <P>
+                 
 
 
                         <div class="nowShowingCard">
                             <img src="../../media/poster_endgame.jpg" alt="Endgame poster" class="poster_jpg">
+                            
+                            //this should float to the side right of the poster
                             <div class="nowShowing_container">
                                 <h2>Avengers: Endgame</h2>
                                 <h3> SHOWING:</h3>
@@ -137,6 +139,8 @@
 
                         <div class="nowShowingCard">
                             <img src="../../media/poster_topendwedding.jpg" alt="Top End Wedding poster" class="poster_jpg">
+                            
+                            //this should float to the side right of the poster
                             <div class="nowShowing_container">
                                 <h2>Top End Wedding</h2>
                                 <h3> SHOWING:</h3>
@@ -150,6 +154,8 @@
 
                         <div class="nowShowingCard">
                             <img src="../../media/poster_dumbo.jpg" alt="Dumbo poster" class="poster_jpg">
+                            
+                            //this should float to the side right of the poster
                             <div class="nowShowing_container">
                                 <h2>Dumbo</h2>
                                 <h3> SHOWING:</h3>
@@ -163,6 +169,8 @@
 
                         <div class="nowShowingCard">
                             <img src="../../media/poster_thehappyprince.jpg" alt="The Happy Prince poster" class="poster_jpg">
+                            
+                            //this should float to the side right of the poster
                             <div class="nowShowing_container">
                                 <h2>The Happy Prince</h2>
                                 <h3> SHOWING:</h3>
@@ -176,7 +184,7 @@
 
 
 
-                    </P>
+               
                 </article>
 
                 <article  id="linktoSynopsis">
@@ -193,7 +201,8 @@
                                 Crazy kids movie about some elephant that does stuff
                             </p>
                         </div>
-
+                        
+                        //this should float to the right of the title/description
                         <div class="video_trailer">
                             <iframe src="https://www.youtube.com/embed/7NiYVoqBt-8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
@@ -209,6 +218,8 @@
                                 The avengers are at it again, avenging all sorts of things when and wherever they please
                             </p>
                         </div>
+                        
+//this should float to the right of the title/description
                         <div class="video_trailer">
                            <iframe src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
@@ -222,6 +233,9 @@
                                 How could one prince possibly be so happy?? Find out in this period comedu
                             </p>
                         </div>
+                        
+                        
+                        //this should float to the right of the title/description
                         <div class="video_trailer">
                             <iframe src="https://www.youtube.com/embed/4HmN9r1Fcr8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
@@ -235,6 +249,9 @@
                                 A celebration of love, family and belonging, set at a wedding for top ends.
                             </p>
                         </div>
+                        
+                        
+                        //this should float to the right of the title/description
                         <div class="video_trailer">
                            <iframe src="https://www.youtube.com/embed/uoDBvGF9pPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
