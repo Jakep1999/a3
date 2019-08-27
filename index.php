@@ -26,7 +26,7 @@
                 <div class="topnav">
                     <a class="active" href="index.html">Home</a>
                     <a href="#linktoAboutUs">About Us</a>
-                    <a href="#linktoPrices" onclick="">Prices</a>
+                    <a href="#linktoPrices">Prices</a>
                     <a href="#linktoNowShowing">Now Showing</a>
                     <a href="#linktoSynopsis">Synopsis</a>
                     <a href="#linktoBooking">Booking</a>
@@ -283,7 +283,7 @@
                         </div>
                         
                         
-                        //this should float to the right of the title/description
+                        <!-this should float to the right of the title/description->
                         <div class="video_trailer">
                            <iframe src="https://www.youtube.com/embed/uoDBvGF9pPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
@@ -340,8 +340,8 @@
                 </article>
             </section>
         </main>
-s
-                        
+
+
 
 
 
