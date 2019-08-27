@@ -39,8 +39,7 @@
             <main>
                 <section>
                     <article id ="linktoAboutUs">
-                        <br>
-                        <br>
+
                         <h1>About Us </h1>
 
                         <P>
@@ -63,11 +62,10 @@
                     </article>
 
 
-                    <article  id="linktoPrices">
-                        <br>
-                        <br>
-                        <h1>Prices </h1>
+                <article  id="linktoPrices">
 
+                    <h1>Prices </h1>
+             
                         <table>
                             <tr>
                                 <th>Seat Type</th>
@@ -112,19 +110,21 @@
                                 <td>24.00</td>
                             </tr>
                         </table>
-
-                    </article>
-
-
-                    <article  id="linktoNowShowing">
-                        <br>
-                        <br>
-                        <h1>Now Showing</h1>
+                </article>
 
 
+
+
+
+                <article  id="linktoNowShowing">
+
+                    <h1>Now Showing</h1>
+                 
 
                         <div class="nowShowingCard">
-                            <img src="../../media/poster_endgame.jpg" alt="Endgame poster" class="poster_jpg">
+<div class="poster_jpg">
+                            <img src="../../media/poster_endgame.jpg" alt="Endgame poster" >
+</div>
 
                             <!-this should float to the side right of the poster->                            <div class="nowShowing_container">
                             <h2>Avengers: Endgame</h2>
@@ -133,12 +133,17 @@
                                 Wed - Fri: 9pm (T21)<br>
                                 Sat - Sun: 6pm (T18)<br>
                             </p>
-                            </div>
+</div>
                         </div>
 
-                        <div class="nowShowingCard">
-                            <img src="../../media/poster_topendwedding.jpg" alt="Top End Wedding poster" class="poster_jpg">
 
+
+
+                        <div class="nowShowingCard">
+<div class="poster_jpg">
+                            <img src="../../media/poster_topendwedding.jpg" alt="Top End Wedding poster">
+
+</div>
                             <!-this should float to the side right of the poster->                            <div class="nowShowing_container">
                             <h2>Top End Wedding</h2>
                             <h3> SHOWING:</h3>
@@ -146,14 +151,24 @@
                                 Mon - Tues: 6pm (T18)<br>
                                 Sat - Sun: 3pm (T15)<br>
                             </p>
+
+
                             </div>
                         </div>  
 
 
-                        <div class="nowShowingCard">
-                            <img src="../../media/poster_dumbo.jpg" alt="Dumbo poster" class="poster_jpg">
 
-                            <!-this should float to the side right of the poster->                            <div class="nowShowing_container">
+
+
+
+
+                        <div class="nowShowingCard">
+<div class="poster_jpg">
+                    <img src="../../media/poster_dumbo.jpg" alt="Dumbo poster">
+</div>
+                            <!-this should float to the side right of the poster->
+
+<div class="nowShowing_container">
                             <h2>Dumbo</h2>
                             <h3> SHOWING:</h3>
                             <p>
@@ -161,13 +176,19 @@
                                 Wed - Fri: 6pm (T18)<br>
                                 Sat - Sun: 12pm (T12)<br>
                             </p>
-                            </div>
+
                         </div>
+</div>
+
+
 
                         <div class="nowShowingCard">
-                            <img src="../../media/poster_thehappyprince.jpg" alt="The Happy Prince poster" class="poster_jpg">
 
+<div class="poster_jpg">
+<img src="../../media/poster_thehappyprince.jpg" alt="The Happy Prince poster" class="poster_jpg">
+</div>
                             <!-this should float to the side right of the poster->
+
                             <div class="nowShowing_container">
                                 <h2>The Happy Prince</h2>
                                 <h3> SHOWING:</h3>
@@ -184,22 +205,29 @@
 
                     </article>
 
-                    <article  id="linktoSynopsis">
-                        <br>
-                        <br>
-                        <h1>Synopsis</h1>
 
 
-                        <div class="synopsisPanel">
-                            <div class="synopsis_container">
-                                <h2>Dumbo - [G]</h2>
-                                <h3> Plot Description:</h3>
-                                <p>
-                                    Crazy kids movie about some elephant that does stuff
-                                </p>
-                            </div>
 
-                            <!–this should float to the right of the title/description->                        <div class="video_trailer">
+
+
+
+
+                <article  id="linktoSynopsis">
+
+                    <h1>Synopsis</h1>
+                    
+                    
+                    <div class="synopsisPanel">
+                        <div class="synopsis_container">
+                            <h2>Dumbo - [G]</h2>
+                            <h3> Plot Description:</h3>
+                            <p>
+                                Crazy kids movie about some elephant that does stuff
+                            </p>
+                        </div>
+                        
+                        //this should float to the right of the title/description
+                        <div class="video_trailer">
                             <iframe src="https://www.youtube.com/embed/7NiYVoqBt-8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
@@ -220,6 +248,9 @@
                             </div>
                         </div>
 
+
+
+
                         <div class="synopsisPanel">
                             <div class="synopsis_container">
                                 <h2>The Happy Prince - [PG13+]</h2>
@@ -231,68 +262,86 @@
 
 
                             <!–this should float to the right of the title/description->                        <div class="video_trailer">
-                            <iframe src="https://www.youtube.com/embed/4HmN9r1Fcr8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
+<iframe src="https://www.youtube.com/embed/4HmN9r1Fcr8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+
+
+                    </div>
+                    
+                    
+
+
+                    
+                    <div class="synopsisPanel">
+                        <div class="synopsis_container">
+                            <h2>Top End Wedding - [M]</h2>
+                            <h3> Plot Description:</h3>
+                            <p>
+                                A celebration of love, family and belonging, set at a wedding for top ends.
+                            </p>
                         </div>
-
-                        <div class="synopsisPanel">
-                            <div class="synopsis_container">
-                                <h2>Top End Wedding - [M]</h2>
-                                <h3> Plot Description:</h3>
-                                <p>
-                                    A celebration of love, family and belonging, set at a wedding for top ends.
-                                </p>
-                            </div>
-
-
-                            <!–this should float to the right of the title/description->
-                            <div class="video_trailer">
-                                <iframe src="https://www.youtube.com/embed/uoDBvGF9pPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
+                        
+                        
+                        //this should float to the right of the title/description
+                        <div class="video_trailer">
+                           <iframe src="https://www.youtube.com/embed/uoDBvGF9pPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
+                    </div>
+                    
+                    
+                </article>
 
 
-                    </article>
 
-                    <article  id="linktoBooking">
+
+
+
+
+
+
+
+
+
+                <article  id="linktoBooking">
+                    <br>
+                    <br>
+                    <h1>Booking</h1>
+                    <P>
                         <br>
                         <br>
-                        <h1>Booking</h1>
-                        <P>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            ******UNDER CONSTRUCTION*****
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                        </P>
-                    </article>
-                </section>
-            </main>
-
-
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        ******UNDER CONSTRUCTION*****
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </P>
+                </article>
+            </section>
+        </main>
+s
+                        
 
 
 
