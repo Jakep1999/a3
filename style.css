@@ -81,7 +81,7 @@ h1 {
 	color: #fff;
 }
 
-h2 {
+.Slogan h2 {
 	font-size: 43px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -113,17 +113,24 @@ main {
 }
 
 .nowShowing_card{
-
-    float:left;
+ width:100px;
+ display:block;
+ float:left;
+	
 }
 
 .nowShowing_container {
+	width: 150px;
+	padding-right: 1000px;
+	display:block;
 	float:right;
 	
 }
 
 /*ABOUT US*/
 
-	   
+.p1 {
+
+	
 
 

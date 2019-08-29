@@ -38,7 +38,11 @@
         </nav>
 		
 		<h1> Lunardo </h1>
+		
+		<div class="Slogan">
 		<h2>All your Entertainment in one place</h2>
+		
+		</div>
 		
 		
 </header>
@@ -61,7 +65,7 @@
 				
 				<div class="content">
         
-                <h3>About <span>Us</span></h3>
+                <h1>About <span>Us</span></h1>
                 <p class="p1">The client wants to target not only their loyal customer from before, but also local cinema goers who would normally drive to modern cinemas in nearby larger towns.</p>
 				<p class="p2"> The client wants to target not only their loyal customer from before, but also local cinema goers who would normally drive to modern cinemas in nearby larger towns.
                         <br>
@@ -153,28 +157,26 @@
 
                 <article class="nowShowing_Card">
 
-                    <div id="Endgame Poster">
-                        <img src="../../media/poster_endgame.jpg" alt="Endgame poster" class="poster_jpg">
-                    </div>
+                    <span class="nowShowing_Card">
+					<img src="../../media/poster_endgame.jpg" alt="Endgame poster" class="poster_jpg">
+                    </span>
 
-                    <!-this should float to the side right of the poster->                            <div class="nowShowing_container">
+                    <!-this should float to the side right of the poster->                            <span class="nowShowing_container">
                     <h2>Avengers: Endgame</h2>
                     <h3> SHOWING:</h3>
                     <p>
                         Wed - Fri: 9pm (T21)<br>
                         Sat - Sun: 6pm (T18)<br>
                     </p>
-                    </div>
+                    </span>
 
-                </article>
-
-
-                <article class="nowShowing_Card">
-                    <div id="Top End Wedding Poster">
+  
+                    <span class="nowShowing_Card">
                         <img src="../../media/poster_topendwedding.jpg" alt="Top End Wedding poster" class="poster_jpg">
 
-                    </div>
-                    <!-this should float to the side right of the poster->                            <div class="nowShowing_container">
+                    </span>
+               
+			   <span class="nowShowing_container">
                     <h2>Top End Wedding</h2>
                     <h3> SHOWING:</h3>
                     <p>
@@ -183,16 +185,14 @@
                     </p>
 
 
-                    </div>
-                </article>
-
-                <article class="nowShowing_Card">
-                    <div id="Dumbo Poster" >
+                    </span>
+              
+                    <span class="nowShowing_Card">
                         <img src="../../media/poster_dumbo.jpg" alt="Dumbo poster" class="poster_jpg">
-                    </div>
+                    </span>
                     <!-this should float to the side right of the poster->
 
-                    <div class="nowShowing_container">
+                    <span class="nowShowing_container">
                         <h2>Dumbo</h2>
                         <h3> SHOWING:</h3>
                         <p>
@@ -201,24 +201,22 @@
                             Sat - Sun: 12pm (T12)<br>
                         </p>
 
-                    </div>
-                </article>
+                    </span>
+               
 
-                <article class="nowShowing_Card">
-
-                    <div id="The Happy Prince Poster">
+                    <span class="nowShowing_Card">
                         <img src="../../media/poster_thehappyprince.jpg" alt="The Happy Prince poster" class="poster_jpg" class="poster_jpg">
-                    </div>
+                    </span>
                     <!-this should float to the side right of the poster->
 
-                    <div class="nowShowing_container">
+                    <span class="nowShowing_container">
                         <h2>The Happy Prince</h2>
                         <h3> SHOWING:</h3>
                         <p>
                             Wed - Fri: 12pm (T12)<br>
                             Sat - Sun: 9pm (T21)<br>
                         </p>
-                    </div>
+                    </span>
                 </article>
 
             </section>
