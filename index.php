@@ -8,6 +8,9 @@
         <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
         <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
         <script src='../wireframe.js'></script>
+		
+		
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
 
 
@@ -17,14 +20,11 @@
     <body>
 
         <header>
-            <div>
-                <img id="CompanyLogo" src="media/???" alt="PAGE BANNER">
-            </div>
-        </header>
-
+            
 			
         <nav>
-            <div id="navigation">
+		 <img id="CompanyLogo" src="../../media/Lunardo Logo.png" alt="PAGE BANNER">
+            <div class="menu">
 			<ul>
 			
                <li> <a class="active" href="index.php">Home</a> </li>
@@ -36,9 +36,25 @@
                  <li><a href="../index.html">Back to A1</a> </li>
             </div>
         </nav>
+		
+		<h1> Lunardo </h1>
+		<h2>All your Entertainment in one place</h2>
+		
+		
+</header>
 
-
-
+<script type="text/javascript">
+		
+		$(window).on("scroll", function()) {
+			if($(window).scrollTop()) {
+				$('nav').addClass('black');
+			}
+			else {
+				$('nav').removeClass('black');
+			}
+		})
+		
+		</script>
         <main>
             <section id ="linktoAboutUs">
                 <article>
@@ -348,5 +364,6 @@
             <div id="DISCLAIMER">Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
         </footer>
 
+		
     </body>
 </html>
