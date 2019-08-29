@@ -19,38 +19,50 @@ main {
 
 
 
+
 /************** NAV BAR */
 
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+ #navigation { 
+ float:right; 
+ clear:right; 
+ padding-top:28px; 
+ padding-bottom:47px; 
+ }
+ 
+#navigation ul { 
+list-style:none;
+ }
+#navigation ul li { 
+float:left; 
+display:inline; 
+padding-left:29px; 
+ }
+ 
+#navigation ul li a { 
+font-size:14px; 
+font-weight:bold; 
+color:#fff; 
+text-decoration:none; 
 }
 
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 10px 12px;
-    text-decoration: none;
-    font-size: 17px;
-    min-width: %35;
-}
+#navigation ul li a.active,
 
-.topnav a:hover {
-    background-color: #99738E;
-    color: black;
-}
-
-.topnav a.active {
-    background-color: #553d67;
-
-    color: white;
+#navigation ul li a:hover { 
+color:#d91d2a; 
 }
 
 
+/*Now Showing Section*/
+
+#linktoNowShowing {
+
+       height:25%;
+       width:100%;
+       background-color:#595654;
+       margin:auto;
+       text-align:center;
+       color:#ff8f66;
+	   }
 
 .poster_jpg {
     width:200px;
@@ -61,12 +73,27 @@ main {
     float:left;
 }
 
-/*CONTENT*/
+.nowShowing_container {
+	float:right;
+	
+}
+
+/*ABOUT US*/
+
+#linktoAboutUs {
+	
+	height:25%;
+       width:100%;
+       background-color:#000000;
+       margin:auto;
+       text-align:center;
+       color:#FFFFFF;
+	   
+	   }
 
 #content .content {
 	padding:30px 0 39px 50px;
+	display: block;
 
-
-
-
+}
 

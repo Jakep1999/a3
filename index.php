@@ -6,7 +6,7 @@
 
         <!-- Keep wireframe.css for debugging, add your css to style.css -->
         <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
-        <link id='stylecss' type="text/css" rel="stylesheet" href="./style.css">
+        <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
         <script src='../wireframe.js'></script>
 
 
@@ -22,15 +22,18 @@
             </div>
         </header>
 
+			
         <nav>
-            <div class="topnav">
-                <a class="active" href="index.php">Home</a>
-                <a href="#linktoAboutUs">About Us</a>
-                <a href="#linktoPrices">Prices</a>
-                <a href="#linktoNowShowing">Now Showing</a>
-                <a href="#linktoSynopsis">Synopsis</a>
-                <a href="#linktoBooking">Booking</a>
-                <a href="../index.html">Back to A1</a>
+            <div id="navigation">
+			<ul>
+			
+               <li> <a class="active" href="index.php">Home</a> </li>
+                 <li><a href="#linktoAboutUs">About Us</a> </li>
+                 <li><a href="#linktoPrices">Prices</a> <li>
+                 <li><a href="#linktoNowShowing">Now Showing</a> </li>
+                 <li><a href="#linktoSynopsis">Synopsis</a> </li>
+                 <li><a href="#linktoBooking">Booking</a> </li>
+                 <li><a href="../index.html">Back to A1</a> </li>
             </div>
         </nav>
 
@@ -40,7 +43,7 @@
             <section id ="linktoAboutUs">
                 <article>
 				
-				<div id="content">
+				<div class="content">
         
                 <h3>About <span>Us</span></h3>
                 <p class="p1">The client wants to target not only their loyal customer from before, but also local cinema goers who would normally drive to modern cinemas in nearby larger towns.</p>
@@ -70,6 +73,7 @@
 
             <section id="linktoPrices">
                 <article>
+				<div id="Prices">
                     <h1>Prices </h1>
 
                     <table>
@@ -79,43 +83,44 @@
                             <th>All day Monday and Wednesday AND 12pm on Weekdays </th>
                             <th>All Other Times</th>
                         </tr>
-                        <tr>
+                        <tr id="Standard Adult">
                             <td>Standard Adult</td>
                             <td>STA</td> 
                             <td>14.00</td>
                             <td>19.80</td>
                         </tr>
-                        <tr>
+                        <tr id="Standard Concession">
                             <td>Standard Concession</td>
                             <td>STP</td> 
                             <td>12.50</td>
                             <td>17.50</td>
                         </tr>
-                        <tr>
+                        <tr id="Standard Child">
                             <td>Standard Child</td>
                             <td>STC</td> 
                             <td>11.00</td>
                             <td>15.30</td>
                         </tr>
-                        <tr>
+                        <tr id="First Class Adult">
                             <td>First Class Adult</td>
                             <td>FCA</td> 
                             <td>24.00</td>
                             <td>30.00</td>
                         </tr>
-                        <tr>
+                        <tr id="FIrst Class Concession">
                             <td>First Class Concession</td>
                             <td>FCP</td> 
                             <td>22.50</td>
                             <td>27.00</td>
                         </tr>
-                        <tr>
+                        <tr id="First Class Child">
                             <td>First Class Child </td>
                             <td>FCC</td> 
                             <td>21.00</td>
                             <td>24.00</td>
                         </tr>
                     </table>
+					</div>
                 </article>
 
             </section>
@@ -130,9 +135,9 @@
 
                 <h1>Now Showing</h1>
 
-                <article class="nowShowingCard">
+                <article class="nowShowing_Card">
 
-                    <div>
+                    <div id="Endgame Poster">
                         <img src="../../media/poster_endgame.jpg" alt="Endgame poster" class="poster_jpg">
                     </div>
 
@@ -148,8 +153,8 @@
                 </article>
 
 
-                <article class="nowShowingCard">
-                    <div>
+                <article class="nowShowing_Card">
+                    <div id="Top End Wedding Poster">
                         <img src="../../media/poster_topendwedding.jpg" alt="Top End Wedding poster" class="poster_jpg">
 
                     </div>
@@ -165,8 +170,8 @@
                     </div>
                 </article>
 
-                <article class="nowShowingCard">
-                    <div >
+                <article class="nowShowing_Card">
+                    <div id="Dumbo Poster" >
                         <img src="../../media/poster_dumbo.jpg" alt="Dumbo poster" class="poster_jpg">
                     </div>
                     <!-this should float to the side right of the poster->
@@ -183,9 +188,9 @@
                     </div>
                 </article>
 
-                <article class="nowShowingCard">
+                <article class="nowShowing_Card">
 
-                    <div>
+                    <div id="The Happy Prince Poster">
                         <img src="../../media/poster_thehappyprince.jpg" alt="The Happy Prince poster" class="poster_jpg" class="poster_jpg">
                     </div>
                     <!-this should float to the side right of the poster->
