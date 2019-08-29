@@ -41,11 +41,7 @@
                 <article>
 				
 				<div id="content">
-        <div class="line-hor"></div>
-        <div class="box">
-          <div class="border-right">
-            <div class="border-left">
-              <div class="inner">
+        
                 <h3>About <span>Us</span></h3>
                 <p class="p1">The client wants to target not only their loyal customer from before, but also local cinema goers who would normally drive to modern cinemas in nearby larger towns.</p>
 				<p class="p2"> The client wants to target not only their loyal customer from before, but also local cinema goers who would normally drive to modern cinemas in nearby larger towns.
