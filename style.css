@@ -1,0 +1,69 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#DISCLAIMER {
+    font-size: 10px;
+  
+}
+
+
+
+main {
+
+    background-color: black;
+    color: #ff8f66;
+    top: 4; /*offset to avoid nav bar */
+}
+
+
+
+
+/************** NAV BAR */
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 17px;
+    min-width: %35;
+}
+
+.topnav a:hover {
+    background-color: #99738E;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #553d67;
+
+    color: white;
+}
+
+
+
+.poster_jpg {
+    width:200px;
+}
+
+.nowShowing_card{
+
+    float:left;
+}
+
+/*CONTENT*/
+
+
+
+
+
