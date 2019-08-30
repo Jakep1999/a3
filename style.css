@@ -19,7 +19,6 @@ main {
     top: 4; /*offset to avoid nav bar */
 }
 
-<<<<<<< HEAD
 header {
 	background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url('../../media/spacephoto.png');
 	background-size:cover;
@@ -41,8 +40,6 @@ header {
   width: 50%;
 }
 
-=======
->>>>>>> 04c9bae3eb95b942749552499d08ce41541e42e2
 
 
 
