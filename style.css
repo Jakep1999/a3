@@ -1,15 +1,22 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
+body
+{
+    background-color: grey;
+}
 #DISCLAIMER {
     font-size: 10px;
-  
+
 }
 
-body {
-	margin:0;
-	padding:0;
+
+
+main {
+
+    color: #ff8f66;
+    top: 4; /*offset to avoid nav bar */
 }
 
 header {
@@ -19,8 +26,6 @@ header {
 	height: 100vh;
 	margin: 0;
 	padding: 21px 0;
-<<<<<<< Updated upstream
-=======
 }
 
 
@@ -46,119 +51,112 @@ header {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
->>>>>>> Stashed changes
 }
 
-nav {
-	position: fixed;
-	width: 100%;
-	line-height: 70px;
-	background: black;
-	
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 17px;
+    min-width: %35;
 }
 
-nav ul {
-	float: right;
-	margin: 0;
-	padding-right: 20px;
+.topnav a:hover {
+    background-color: #99738E;
+    color: black;
 }
 
-nav ul li {
-	
-	display: inline-block;
-	padding: 16px 32px;
+.topnav a.active {
+    background-color: #553d67;
+
+    color: white;
 }
 
-nav ul li a {
-	text-decoration: none;
-	color: #fff;
-	font-size: 25px;
+/***** NOW SHOWING, this forms a grid ****/
+
+.NowShowing {
+
 }
 
-nav.black {
-	background: #000;
-	
-}
+/** this is to format each card/tile *//
 
-/* Help on these
-nav ul li a.active {
-background-color: #553d67;
-color:;
-}
 
+.nowShowing_Card{
     
-nav ul li a:hover { 
-color:#grey; 
-}
-*/
-#CompanyLogo {
-	
-	height: 75px;
-	width: 75px;
-	float: left;
-	margin: 16px 16px;
+    padding: 12px;
+    background-color: #f1f1f1;
+
+clear:both;
 }
 
-h1 {
-	font-size: 48px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-weight: bold;
-	text-align: center;
-	padding-top: 350px;
-	color: #fff;
-}
-
-.Slogan h2 {
-	font-size: 43px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-weight: bold;
-	text-align: center;
-	color: #fff;
-	
-	
+.nowShowing_Card  
 }
 
 
-main {
+/** just set width of poster here */
+.nowShowing_Image {
+max-height: 250px;
+    clear:both;
+    float:left;
+     
+}
 
-    background: url('../../media/body-bg.gif');
-    color: #ff8f66;
-    top: 4; /*offset to avoid nav bar */
-	margin: 0;
-	padding: 21px 0;
+.nowShowing_Title{
+
+}
+.nowShowing_Content{
+   
+float:right;
+}
+
+.column {
+    float: left;
+    width: 32%;
+    padding: 0 10px;
+    
+    border: double;
+    box-shadow: 5px 10px 8px #888888; /* this adds the "card" effect */
+}
+
+.column:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 
 
-/*Now Showing Section*/
+/*   synopsis area   */
 
 
-
-.poster_jpg {
-    width:200px;
+.synopsis_Card{
+    border: double;
+    align-content: centre;
+}
+.synopsis_content{
+    padding: 20px 20px 20px 20px;
+    float:left;
 }
 
-.nowShowing_card{
- width:100px;
- display:block;
- float:left;
-	
+.synopsis_Trailer{
+padding: 20px 20px 20px 20px;
 }
-
-.nowShowing_container {
-	width: 150px;
-	padding-right: 1000px;
-	display:block;
-	float:right;
-	
-}
-
-/*ABOUT US*/
-
-.p1 {
-
-	
-
-
