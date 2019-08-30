@@ -176,6 +176,35 @@ float:right;
     clear: both;
 }
 
+/* About us Area */
+
+.individualSection {
+	
+	display: inline;
+	text-align: center;
+}
+
+.individualSection p {
+	
+	
+	text-align: center;
+}
+
+/*Prices Area*/
+
+.individualSection table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.individualSection th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.individualSection tr:hover {background-color:#636161;}
+
 
 
 /*   synopsis area   */

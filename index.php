@@ -42,14 +42,14 @@
 
                     <h1>About Us </h1>
 
-                    <P>
-
-                        The client wants to target not only their loyal customer from before, but also local cinema goers who would normally drive to modern cinemas in nearby larger towns.
+                    <p>
+                        Welcome to Lunardo, your first choice of safe and affordable Entertainment 
                         <br>
-                        This area should tell (ie with words) and show (ie with images) potential customers these things:
-                        The cinema has reopened after extensive improvements and renovations.
-                        There are new seats: standard seats and reclinable first class seats
-                        The projection and sound systems are upgraded with 3D Dolby Vision projection and Dolby Atmos sound. See https://www.dolby.com/us/en/cinema for more information.
+                    
+                        After recent developments and alot of hardwork we are proud to announce we will be <b>REOPENING</b>, but this time <b>BIGGER</b> and <b>BETTER</b>
+                        We have also refirmished and installed comfortable new seats for all to enjoy, relax to ensure the best experience for the viewer as that is our number one priority 
+			<br>
+                        The projection and sound systems are upgraded with 3D Dolby Vision projection and Dolby Atmos sound.
                         <br>
                         The client wants to show pictures of their new seats: standard seating and first class seating. Images for the seats can be found here:
                         Standard: http://www.profurn.com.au/portfolio-item/538/
