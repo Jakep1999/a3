@@ -102,7 +102,8 @@ clear:both;
 
 /** just set width of poster here */
 .nowShowing_Image {
-max-height: 250px;
+;
+    
     clear:both;
     float:left;
      
@@ -118,7 +119,7 @@ float:right;
 
 .column {
     float: left;
-    width: 32%;
+    width: 30%;
     padding: 0 10px;
     
     border: double;
@@ -164,4 +165,6 @@ float:right;
 
 .synopsis_Trailer{
 padding: 20px 20px 20px 20px;
+
 }
+
