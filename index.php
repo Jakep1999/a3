@@ -324,10 +324,12 @@
 
 
         <footer>
+		<section>
             <div>&copy;<script>
                 document.write(new Date().getFullYear());
-                </script> Daniel Jungwirth, s3539595 &amp </div>
+                </script> Daniel Jungwirth, s3539595 &amp Jake Pandos, s3719022 </div>
             <div id="DISCLAIMER">Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
+			</section>
         </footer>
 
     </body>

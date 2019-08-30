@@ -11,14 +11,24 @@ body
 
 }
 
+section{
+	
+	background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url('../../media/spacephoto.png');
+	
+}
 
 
 main {
 
     color: #ff8f66;
     top: 4; /*offset to avoid nav bar */
-	background-image: url("../../media/body-bg.gif");
+	
 	background-color: #cccccc;
+	
+}
+
+footer{
+	color: #ff8f66;
 	
 }
 
