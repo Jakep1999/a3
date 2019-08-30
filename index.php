@@ -42,15 +42,14 @@
 
                     <h1>About Us </h1>
 
-                    <p>
+                    <P>
 
-                        Welcome to Lunardo, your first choice of safe and affordable Entertainment 
+                        The client wants to target not only their loyal customer from before, but also local cinema goers who would normally drive to modern cinemas in nearby larger towns.
                         <br>
-                    
-                        After recent developments and alot of hardwork we are proud to announce we will be <b>REOPENING</b>, but this time <b>BIGGER</b> and <b>BETTER</b>
-                        We have also refirmished and installed comfortable new seats for all to enjoy, relax to ensure the best experience for the viewer as that is our number one priority 
-			<br>
-                        The projection and sound systems are upgraded with 3D Dolby Vision projection and Dolby Atmos sound.
+                        This area should tell (ie with words) and show (ie with images) potential customers these things:
+                        The cinema has reopened after extensive improvements and renovations.
+                        There are new seats: standard seats and reclinable first class seats
+                        The projection and sound systems are upgraded with 3D Dolby Vision projection and Dolby Atmos sound. See https://www.dolby.com/us/en/cinema for more information.
                         <br>
                         The client wants to show pictures of their new seats: standard seating and first class seating. Images for the seats can be found here:
                         Standard: http://www.profurn.com.au/portfolio-item/538/
@@ -59,7 +58,7 @@
 
 
 
-                    </p>
+                    </P>
                 </div>
             </section>
 
@@ -136,13 +135,13 @@
                         <div class="column">
 
                             <div class="nowShowing_Card">
-                                
-                                    <img src="../../media/poster_endgame.jpg" alt="Endgame poster" class="nowShowing_Image">
 
-                               <div class="nowShowing_Content">
+                                <img src="../../media/poster_endgame.jpg" alt="Endgame poster" class="nowShowing_Image">
+
+                                <div class="nowShowing_Content">
                                     <span class="nowShowing_Title"><h2>Avengers: Endgame</h2></span>
                                     <h3> SHOWING:</h3>                                
-                                   <p>
+                                    <p>
                                         Mon:  ---------<br>
                                         Tues: ---------<br>
                                         Wed:  9pm (T21)<br>
@@ -164,7 +163,7 @@
                                 <div>
                                     <img src="../../media/poster_dumbo.jpg" alt="Dumbo poster" class="nowShowing_Image">
                                 </div>
-<div class="nowShowing_Content">
+                                <div class="nowShowing_Content">
                                     <h2>Dumbo</h2>
                                     <h3> SHOWING:</h3>
                                     <p>
@@ -178,7 +177,7 @@
                                     </p>
 
                                 </div>
-                                
+
                             </div>
                         </div>
 
@@ -213,7 +212,7 @@
                             <div class="nowShowing_Card">
                                 <div>
                                     <img src="../../media/poster_thehappyprince.jpg" alt="The Happy Prince poster" class="nowShowing_Image">
-                               </div>
+                                </div>
 
                                 <div class="nowShowing_Content">
                                     <h2>The Happy Prince</h2>
@@ -228,10 +227,10 @@
                                         Sun:  9pm (T21)<br>
                                     </p>
                                 </div>
-                                
-                                
-                                
-                                
+
+
+
+
                             </div>
                         </div>
                     </div>
@@ -253,12 +252,12 @@
 
                 <div class="synopsis_Card">
                     <div class ="synopsis_content">
-                    <h2>Avengers: Endgame - [MA15+]</h2>
-                    <h3> Plot Description:</h3>
-                    <p>
-                        The avengers are at it again, avenging all sorts of things when and wherever they please
-                    </p>
-
+                        <h2>Avengers: Endgame - [MA15+]</h2>
+                        <h3> Plot Description:</h3>
+                        <p>
+                            The avengers are at it again, avenging all sorts of things when and wherever they please
+                        </p>
+                        <button>BOOK NOW!</button>
                     </div>                    
                     <div class="synopsis_Trailer">
                         <iframe src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -274,14 +273,9 @@
 
 
 
-
-
-
-
-
-
             <section  id="linktoBooking">
-                <article>
+            
+                    <div>
                     <br>
                     <br>
                     <h1>Booking</h1>
@@ -315,7 +309,8 @@
                         <br>
                         <br>
                     </P>
-                </article>
+                        </div>
+
             </section>
         </main>
 
@@ -325,11 +320,11 @@
 
         <footer>
             <section>
-            <div>&copy;<script>
-                document.write(new Date().getFullYear());
-                </script> Daniel Jungwirth, s3539595 &amp Jake Pandos</div>
-            <div id="DISCLAIMER">Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
-                </section>
+                <div>&copy;<script>
+                    document.write(new Date().getFullYear());
+                    </script> Daniel Jungwirth, s3539595 &amp Jake Pandos</div>
+                <div id="DISCLAIMER">Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
+            </section>
         </footer>
 
     </body>
