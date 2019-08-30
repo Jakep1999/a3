@@ -20,8 +20,16 @@
     <body>
 
         <header>
+<<<<<<< Updated upstream
             
 			
+=======
+            <div>
+                <img id="CompanyLogo" src="../../media/Lunardo Logo.png" alt="PAGE BANNER">
+            </div>
+        </header>
+
+>>>>>>> Stashed changes
         <nav>
 		 <img id="CompanyLogo" src="../../media/Lunardo Logo.png" alt="PAGE BANNER">
             <div class="menu">
