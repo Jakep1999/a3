@@ -43,7 +43,6 @@
                     <h1>About Us </h1>
 
                     <p>
-
                         Welcome to Lunardo, your first choice of safe and affordable Entertainment 
                         <br>
                     
@@ -59,7 +58,7 @@
 
 
 
-                    </p>
+                    </P>
                 </div>
             </section>
 
@@ -136,13 +135,13 @@
                         <div class="column">
 
                             <div class="nowShowing_Card">
-                                
-                                    <img src="../../media/poster_endgame.jpg" alt="Endgame poster" class="nowShowing_Image">
 
-                               <div class="nowShowing_Content">
+                                <img src="../../media/poster_endgame.jpg" alt="Endgame poster" class="nowShowing_Image">
+
+                                <div class="nowShowing_Content">
                                     <span class="nowShowing_Title"><h2>Avengers: Endgame</h2></span>
                                     <h3> SHOWING:</h3>                                
-                                   <p>
+                                    <p>
                                         Mon:  ---------<br>
                                         Tues: ---------<br>
                                         Wed:  9pm (T21)<br>
@@ -164,7 +163,7 @@
                                 <div>
                                     <img src="../../media/poster_dumbo.jpg" alt="Dumbo poster" class="nowShowing_Image">
                                 </div>
-<div class="nowShowing_Content">
+                                <div class="nowShowing_Content">
                                     <h2>Dumbo</h2>
                                     <h3> SHOWING:</h3>
                                     <p>
@@ -178,7 +177,7 @@
                                     </p>
 
                                 </div>
-                                
+
                             </div>
                         </div>
 
@@ -213,7 +212,7 @@
                             <div class="nowShowing_Card">
                                 <div>
                                     <img src="../../media/poster_thehappyprince.jpg" alt="The Happy Prince poster" class="nowShowing_Image">
-                               </div>
+                                </div>
 
                                 <div class="nowShowing_Content">
                                     <h2>The Happy Prince</h2>
@@ -228,10 +227,10 @@
                                         Sun:  9pm (T21)<br>
                                     </p>
                                 </div>
-                                
-                                
-                                
-                                
+
+
+
+
                             </div>
                         </div>
                     </div>
@@ -253,12 +252,12 @@
 
                 <div class="synopsis_Card">
                     <div class ="synopsis_content">
-                    <h2>Avengers: Endgame - [MA15+]</h2>
-                    <h3> Plot Description:</h3>
-                    <p>
-                        The avengers are at it again, avenging all sorts of things when and wherever they please
-                    </p>
-
+                        <h2>Avengers: Endgame - [MA15+]</h2>
+                        <h3> Plot Description:</h3>
+                        <p>
+                            The avengers are at it again, avenging all sorts of things when and wherever they please
+                        </p>
+                        <button>BOOK NOW!</button>
                     </div>                    
                     <div class="synopsis_Trailer">
                         <iframe src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -274,14 +273,9 @@
 
 
 
-
-
-
-
-
-
             <section  id="linktoBooking">
-                <article>
+            
+                    <div>
                     <br>
                     <br>
                     <h1>Booking</h1>
@@ -315,7 +309,8 @@
                         <br>
                         <br>
                     </P>
-                </article>
+                        </div>
+
             </section>
         </main>
 
@@ -324,12 +319,12 @@
 
 
         <footer>
-		<section>
-            <div>&copy;<script>
-                document.write(new Date().getFullYear());
-                </script> Daniel Jungwirth, s3539595 &amp Jake Pandos, s3719022 </div>
-            <div id="DISCLAIMER">Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
-			</section>
+            <section>
+                <div>&copy;<script>
+                    document.write(new Date().getFullYear());
+                    </script> Daniel Jungwirth, s3539595 &amp Jake Pandos</div>
+                <div id="DISCLAIMER">Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
+            </section>
         </footer>
 
     </body>

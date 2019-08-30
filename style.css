@@ -2,19 +2,39 @@ html {
     scroll-behavior: smooth;
 }
 
+
+section
+{
+    	
+    	
+
+}
+
+#linktoAboutUs{background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url('../../media/spacephoto.png');}
+#linktoPrices{background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url('../../media/spacephoto.png');}
+
+#linkToNowShowing{
+    background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url('../../media/spacephoto.png');
+}
+
+#linktoSynopsis
+{
+    background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url('../../media/spacephoto.png');
+}
+
+#linktoBooking
+{
+    padding: 10px;
+    background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url('../../media/spacephoto.png');
+}
+
 body
 {
-    background-color: grey;
+    background-color: black;
 }
 #DISCLAIMER {
     font-size: 10px;
 
-}
-
-section{
-	
-	background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url('../../media/spacephoto.png');
-	
 }
 
 
@@ -22,20 +42,18 @@ main {
 
     color: #ff8f66;
     top: 4; /*offset to avoid nav bar */
-	
-	background-color: #cccccc;
-	
 }
 
 footer{
-	color: #ff8f66;
-	
+   color: #ff8f66; 
+     background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url('../../media/spacephoto.png');
 }
-
 header {
 	background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url('../../media/spacephoto.png');
-	background-size:cover;
-	background-position: center;
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 	height: 100vh;
 	margin: 0;
 	padding: 21px 0;
@@ -90,6 +108,8 @@ header {
 /***** NOW SHOWING, this forms a grid ****/
 
 .NowShowing {
+    
+    
 
 }
 
@@ -104,13 +124,12 @@ header {
 clear:both;
 }
 
-.nowShowing_Card  
-}
 
 
 /** just set width of poster here */
 .nowShowing_Image {
-max-height: 250px;
+
+    max-width:33%;
     clear:both;
     float:left;
      
@@ -126,11 +145,12 @@ float:right;
 
 .column {
     float: left;
-    width: 32%;
+    width: 30%;
     padding: 0 10px;
     
     border: double;
     box-shadow: 5px 10px 8px #888888; /* this adds the "card" effect */
+     background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url('../../media/spacephoto.png');
 }
 
 .column:hover {
@@ -141,7 +161,7 @@ float:right;
 .row {margin: 0 -5px;}
 
 /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
     .column {
         width: 100%;
         display: block;
@@ -170,7 +190,6 @@ float:right;
 	text-align: center;
 }
 
-
 /*Prices Area*/
 
 .individualSection table {
@@ -187,6 +206,7 @@ float:right;
 .individualSection tr:hover {background-color:#636161;}
 
 
+
 /*   synopsis area   */
 
 
@@ -201,4 +221,6 @@ float:right;
 
 .synopsis_Trailer{
 padding: 20px 20px 20px 20px;
+
 }
+
