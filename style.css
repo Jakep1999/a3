@@ -11,7 +11,9 @@ body
 
 }
 
-
+section{
+    background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url('../../media/spacephoto.png');
+}
 
 main {
 
@@ -19,6 +21,9 @@ main {
     top: 4; /*offset to avoid nav bar */
 }
 
+footer{
+   color: #ff8f66; 
+}
 header {
 	background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url('../../media/spacephoto.png');
 	background-size:cover;
