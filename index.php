@@ -135,21 +135,23 @@
                         <div class="column">
 
                             <div class="nowShowing_Card">
-                                <div>
+                                
                                     <img src="../../media/poster_endgame.jpg" alt="Endgame poster" class="nowShowing_Image">
 
-                                </div>
-
-                                <div class="nowShowing_Content">
+                               <div class="nowShowing_Content">
                                     <span class="nowShowing_Title"><h2>Avengers: Endgame</h2></span>
-                                    <h3> SHOWING:</h3>
-                                    <p>
-                                        Mon - Tues: ------- <br>
-                                        Wed - Fri: 9pm (T21)<br>
-                                        Sat - Sun: 6pm (T18)<br>
+                                    <h3> SHOWING:</h3>                                
+                                   <p>
+                                        Mon:  ---------<br>
+                                        Tues: ---------<br>
+                                        Wed:  9pm (T21)<br>
+                                        Thur: 9pm (T21)<br>
+                                        Fri:  9pm (T21)<br>
+                                        Sat:  6pm (T18)<br>
+                                        Sun:  6pm (T18)<br>
                                     </p>
-
                                 </div>
+
 
                             </div>
                         </div>
@@ -161,17 +163,21 @@
                                 <div>
                                     <img src="../../media/poster_dumbo.jpg" alt="Dumbo poster" class="nowShowing_Image">
                                 </div>
-
-                                <div class="nowShowing_Content">
+<div class="nowShowing_Content">
                                     <h2>Dumbo</h2>
                                     <h3> SHOWING:</h3>
                                     <p>
-                                        Mon - Tues: 12pm (T12)<br>
-                                        Wed - Fri: 6pm (T18)<br>
-                                        Sat - Sun: 12pm (T12)<br>
+                                        Mon:  12pm (T12)<br>
+                                        Tues: 12pm (T12)<br>
+                                        Wed:  6pm (T18)<br>
+                                        Thur: 6pm (T18)<br>
+                                        Fri:  6pm (T18)<br>
+                                        Sat:  6pm (T18)<br>
+                                        Sun:  12pm (T12)<br>
                                     </p>
 
                                 </div>
+                                
                             </div>
                         </div>
 
@@ -186,10 +192,13 @@
                                     <h2>Top End Wedding</h2>
                                     <h3> SHOWING:</h3>
                                     <p>
-                                        Mon - Tues: 6pm (T18)<br>
-                                        Wed - Fri: ---------<br>
-                                        Sat - Sun: 3pm (T15)<br>
-                                        <br>
+                                        Mon:  ---------<br>
+                                        Tues: 6pm (T18)<br>
+                                        Wed:  ---------<br>
+                                        Thur: --------<br>
+                                        Fri:  ---------<br>
+                                        Sat:  3pm (T15)<br>
+                                        Sun:  3pm (T15)<br>
                                     </p>
 
 
@@ -209,12 +218,19 @@
                                     <h2>The Happy Prince</h2>
                                     <h3> SHOWING:</h3>
                                     <p>
-                                        Mon - Tues: --------<br>
-                                        Wed - Fri: 12pm (T12)<br>
-                                        Sat - Sun: 9pm (T21)<br>
-                                        <br>
+                                        Mon:  ---------<br>
+                                        Tues: ---------<br>
+                                        Wed:  12pm (T12)<br>
+                                        Thur: 12pm (T12)<br>
+                                        Fri:  12pm (T12)<br>
+                                        Sat:  9pm (T21)<br>
+                                        Sun:  9pm (T21)<br>
                                     </p>
                                 </div>
+                                
+                                
+                                
+                                
                             </div>
                         </div>
                     </div>

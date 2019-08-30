@@ -63,36 +63,44 @@ main {
 
 
 .nowShowing_Card{
+    
+    padding: 12px;
+    background-color: #f1f1f1;
 
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 12px;
-  text-align: center;
-  background-color: #f1f1f1;
-  
+clear:both;
 }
 
-.nowShowing_Card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.nowShowing_Card  
 }
+
 
 /** just set width of poster here */
 .nowShowing_Image {
-
 max-height: 250px;
+    clear:both;
     float:left;
+     
 }
 
 .nowShowing_Title{
 
 }
 .nowShowing_Content{
-
+   
+float:right;
 }
 
 .column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
+    float: left;
+    width: 32%;
+    padding: 0 10px;
+    
+    border: double;
+    box-shadow: 5px 10px 8px #888888; /* this adds the "card" effect */
+}
+
+.column:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
 }
 
 /* Remove extra left and right margins, due to padding in columns */
@@ -100,18 +108,18 @@ max-height: 250px;
 
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
 }
 
 /* Clear floats after the columns */
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 
@@ -120,13 +128,14 @@ max-height: 250px;
 
 
 .synopsis_Card{
-    border: solid;
+    border: double;
     align-content: centre;
 }
 .synopsis_content{
+    padding: 20px 20px 20px 20px;
     float:left;
 }
 
 .synopsis_Trailer{
-   
+padding: 20px 20px 20px 20px;
 }
