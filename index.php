@@ -18,7 +18,11 @@
 
         <header>
             <div>
+<<<<<<< HEAD
                 <img id="CompanyLogo" src="../../media/Lunardo Logo.png" alt="PAGE BANNER">
+=======
+                <img id="CompanyLogo" src="media/???" alt="PAGE BANNER">
+>>>>>>> 04c9bae3eb95b942749552499d08ce41541e42e2
             </div>
         </header>
 
