@@ -17,6 +17,9 @@ main {
 
     color: #ff8f66;
     top: 4; /*offset to avoid nav bar */
+	background-image: url("../../media/body-bg.gif");
+	background-color: #cccccc;
+	
 }
 
 header {
@@ -143,6 +146,35 @@ float:right;
     clear: both;
 }
 
+/* About us Area */
+
+.individualSection {
+	
+	display: inline;
+	text-align: center;
+}
+
+.individualSection p {
+	
+	
+	text-align: center;
+}
+
+
+/*Prices Area*/
+
+.individualSection table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.individualSection th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.individualSection tr:hover {background-color:#636161;}
 
 
 /*   synopsis area   */
