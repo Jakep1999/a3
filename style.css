@@ -2,6 +2,31 @@ html {
     scroll-behavior: smooth;
 }
 
+@font-face{
+    font-family: 'B612-Bold';
+    src: URL('../../media/B612/B612-Bold.ttf') format('truetype');
+        
+}
+
+
+
+h1{
+    
+
+    font-family: 'Montserrat', sans-serif;
+
+    text-decoration:underline;
+}
+
+h2{
+        text-decoration:underline;
+
+}
+
+p{
+    
+}
+
 
 section
 {
@@ -31,6 +56,7 @@ section
 body
 {
     background-color: black;
+    font-family: 'Hepta Slab', serif;
 }
 #DISCLAIMER {
     font-size: 10px;
@@ -175,35 +201,6 @@ float:right;
     display: table;
     clear: both;
 }
-
-/* About us Area */
-
-.individualSection {
-	
-	display: inline;
-	text-align: center;
-}
-
-.individualSection p {
-	
-	
-	text-align: center;
-}
-
-/*Prices Area*/
-
-.individualSection table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.individualSection th, td {
-  padding: 8px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-
-.individualSection tr:hover {background-color:#636161;}
 
 
 

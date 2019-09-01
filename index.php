@@ -6,6 +6,12 @@
 
         <!-- Keep wireframe.css for debugging, add your css to style.css -->
         <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
+        
+<link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
+        
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+
         <link id='stylecss' type="text/css" rel="stylesheet" href="./style.css">
         <script src='../wireframe.js'></script>
 
