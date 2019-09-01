@@ -2,34 +2,23 @@ html {
     scroll-behavior: smooth;
 }
 
-<<<<<<< HEAD
-@font-face{
-    font-family: 'B612-Bold';
-    src: URL('../../media/B612/B612-Bold.ttf') format('truetype');
-        
-}
-
 
 
 h1{
-    
-
     font-family: 'Montserrat', sans-serif;
-
     text-decoration:underline;
+
 }
 
 h2{
-        text-decoration:underline;
-
+    font-family: 'Montserrat', sans-serif;
+    text-decoration:underline;
 }
 
 p{
-    
+    font-family: 'Hepta Slab', serif;
 }
 
-=======
->>>>>>> Development
 
 section
 {
@@ -38,31 +27,47 @@ section
 
 }
 
-#linktoAboutUs{background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url('../../media/spacephoto.png');}
-#linktoPrices{background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url('../../media/spacephoto.png');}
+#linktoAboutUs{
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom: 10px;
+background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.1)),url('../../media/blue_space.jpg');
+    background-size: cover;
+}
+#linktoPrices{
+
+}
 
 #linkToNowShowing{
-    background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url('../../media/spacephoto.png');
 }
 
 #linktoSynopsis
 {
-    background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url('../../media/spacephoto.png');
+    margin:10px;
+    background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.1)),url('../../media/spacephoto.png');
 }
 
 #linktoBooking
 {
-    padding: 10px;
-    background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url('../../media/spacephoto.png');
+    margin:10px;
+    background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.1)),url('../../media/jellyfish_space.jpg');
+background-size: cover;);
+}
+
+
+#dolbylogo{
+    max-width: 35%;
+}
+
+.seatingImage{
+    max-width: 20%;
 }
 
 body
 {
     background-color: black;
-<<<<<<< HEAD
     font-family: 'Hepta Slab', serif;
-=======
->>>>>>> Development
+
 }
 #DISCLAIMER {
     font-size: 10px;
@@ -73,7 +78,7 @@ body
 main {
 
     color: #ff8f66;
-    top: 4; /*offset to avoid nav bar */
+
 }
 
 footer{
@@ -121,9 +126,8 @@ header {
     color: #f2f2f2;
     text-align: center;
     padding: 10px 12px;
-    text-decoration: none;
     font-size: 17px;
-    min-width: %35;
+    width: 10%;
 }
 
 .topnav a:hover {
@@ -145,7 +149,7 @@ header {
 
 }
 
-/** this is to format each card/tile *//
+/** this is to format each card/tile */
 
 
 .nowShowing_Card{
@@ -181,21 +185,22 @@ float:right;
     padding: 0 10px;
     
     border: double;
-    box-shadow: 5px 10px 8px #888888; /* this adds the "card" effect */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
      background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url('../../media/spacephoto.png');
 }
 
 .column:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
+    box-shadow: 5px 10px 8px #888888; /* this adds the "card" effect */
+    
 }
 
 /* Remove extra left and right margins, due to padding in columns */
 .row {margin: 0 -5px;}
 
 /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 800px) {
     .column {
-        width: 100%;
+        width: 90%;
         display: block;
         margin-bottom: 20px;
     }
@@ -208,13 +213,11 @@ float:right;
     clear: both;
 }
 
-<<<<<<< HEAD
-=======
+
 /* About us Area */
 
 .individualSection {
 	
-	display: inline;
 	text-align: center;
 }
 
@@ -238,7 +241,8 @@ float:right;
 }
 
 .individualSection tr:hover {background-color:#636161;}
->>>>>>> Development
+
+
 
 
 
@@ -247,7 +251,6 @@ float:right;
 
 .synopsis_Card{
     border: double;
-    align-content: centre;
 }
 .synopsis_content{
     padding: 20px 20px 20px 20px;
@@ -259,3 +262,13 @@ padding: 20px 20px 20px 20px;
 
 }
 
+.button {
+  background-color: green; 
+  border: none;
+  color: green;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
