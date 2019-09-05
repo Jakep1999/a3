@@ -154,8 +154,7 @@ header {
 
 .nowShowing_Card{
     
-    padding: 12px;
-    background-color: #f1f1f1;
+
 
 clear:both;
 }
@@ -183,10 +182,11 @@ float:right;
     float: left;
     width: 30%;
     padding: 0 10px;
+    margin:10px;
     
     border: double;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
-     background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url('../../media/spacephoto.png');
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url('../../media/spacephoto.png'); ->
 }
 
 .column:hover {
