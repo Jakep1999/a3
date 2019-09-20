@@ -272,3 +272,40 @@ padding: 20px 20px 20px 20px;
   display: inline-block;
   font-size: 16px;
 }
+
+
+/* form area */
+* {box-sizing: border-box}
+
+
+.container {
+  padding: 16px;
+}
+
+
+
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+.bookbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.bookbtn:hover {
+  opacity:1;
+}
+
+
+
