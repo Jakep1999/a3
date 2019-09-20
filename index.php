@@ -299,41 +299,73 @@
 
         <section  id="linktoBooking">
 
-            <div>
-                <br>
-                <br>
-                <h1>Booking</h1>
-                <P>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    ******UNDER CONSTRUCTION*****
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </P>
-            </div>
+            
+                <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post">
+
+  <div class="container">
+    <h1>Book a Movie</h1>
+    <p>You can view and book the movie you have selected, please choose a time and fill in the required fields to proceed.</p>
+    <hr>
+
+    <label for="Movie ID"><b>Movie ID</b></label>
+    <input type="hidden"  name="movie[id]">
+
+    <label for="Movie Day"><b>Movie Day</b></label>
+    <input type="hidden"  name="movie[day]">
+
+    <label for="Movie Hour"><b>Movie Hour</b></label>
+    <input type="hidden" name="movie[hour]">
+	
+	<!-- Standard Section -->
+    <label for="Standard Adult"><b>Standard Adult</b></label>
+    <input type="select" name="seats[STA]">
+	
+	 <label for="Standard Concession"><b>Standard Concession</b></label>
+    <input type="select" name="seats[STP]">
+	
+	<label for="Standard Child"><b>Standard Child</b></label>
+    <input type="select" name="seats[STC]">
+	
+	
+	<!-- First Class Section -->
+	<label for="First Class Adult"><b>First Class Adult</b></label>
+    <input type="select" name="seats[FCA]">
+	
+	<label for="First Class Concession"><b>First Class Concession</b></label>
+    <input type="select" name="seats[FCP]">
+	
+	<label for="First Class Child"><b>First Class Child</b></label>
+    <input type="select" name="seats[FCC]">
+	
+	
+	<!-- Customer Details -->
+	<label for="Name"><b>Name</b></label>
+    <input type="text" name="cust[name]" required>
+	
+	<label for="Email"><b>Email</b></label>
+    <input type="email" name="cust[email]" required>
+	
+	<label for="Mobile"><b>Mobile</b></label>
+    <input type="tel" name="cust[mobile]" required>
+	
+	<label for="Credit Card"><b>Credit Card</b></label>
+    <input type="text" name="cust[card]" required>
+	
+	<label for="Expiry"><b>Expiry</b></label>
+    <input type="month" name="cust[expiry]" required>
+	
+	
+	
+	
+    <hr>
+
+    <p> </p>
+    <button type="submit" class="bookbtn" name="order" >Book Now!</button>
+  </div>
+
+ 
+</form>
+            
 
         </section>
         </main>
