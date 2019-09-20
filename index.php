@@ -318,24 +318,98 @@
 	
 	<!-- Standard Section -->
     <label for="Standard Adult"><b>Standard Adult</b></label>
-    <input type="select" name="seats[STA]">
+    <select type="select" name="seats[STA]">
+	<option value="ticketNumber">Select number of tickets...</option>
+	<option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+	<option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+		</select>
+        
+		
 	
 	 <label for="Standard Concession"><b>Standard Concession</b></label>
-    <input type="select" name="seats[STP]">
+    <select type="select" name="seats[STP]">
+	<option value="ticketNumber">Select number of tickets...</option>
+	<option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+	<option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+		</select>
 	
 	<label for="Standard Child"><b>Standard Child</b></label>
-    <input type="select" name="seats[STC]">
+    <select type="select" name="seats[STC]">
+	<option value="ticketNumber">Select number of tickets...</option>
+	<option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+	<option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+		</select>
 	
 	
 	<!-- First Class Section -->
 	<label for="First Class Adult"><b>First Class Adult</b></label>
-    <input type="select" name="seats[FCA]">
+    <select type="select" name="seats[FCA]">
+	<option value="ticketNumber">Select number of tickets...</option>
+	<option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+	<option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+</select>
 	
 	<label for="First Class Concession"><b>First Class Concession</b></label>
-    <input type="select" name="seats[FCP]">
+    <select type="select" name="seats[FCP]">
+	<option value="ticketNumber">Select number of tickets...</option>
+	<option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+	<option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+</select>
 	
 	<label for="First Class Child"><b>First Class Child</b></label>
-    <input type="select" name="seats[FCC]">
+    <select type="select" name="seats[FCC]">
+	<option value="ticketNumber">Select number of tickets...</option>
+	<option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+	<option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+</select>
 	
 	
 	<!-- Customer Details -->
