@@ -438,11 +438,10 @@
 	
     <hr>
 
-    <p> </p>
-	<label for="Total"><b>Total</b></label>
-    <input type="hidden" name="Total" id='total'>
+    <p id="total"></p>
+	<br><br>
 	
-    <button type="submit" class="bookbtn" name="order" >Book Now!</button>
+    <button type="submit" class="bookbtn" name="order" id='bookbtn' >Book Now!</button>
   </div>
 
  
@@ -464,6 +463,6 @@
             <div id="DISCLAIMER">Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
         </section>
     </footer>
-
+ <script src="script.js"></script>
     </body>
 </html>
