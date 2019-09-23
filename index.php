@@ -307,18 +307,20 @@
     <p>You can view and book the movie you have selected, please choose a time and fill in the required fields to proceed.</p>
     <hr>
 
+	
     <label for="Movie ID"><b>Movie ID</b></label>
-    <input type="hidden"  name="movie[id]">
+    <input type="hidden"  name="movie[id]" id='movie-id'>
 
     <label for="Movie Day"><b>Movie Day</b></label>
-    <input type="hidden"  name="movie[day]">
+    <input type="hidden"  name="movie[day]" id='movie-day'>
 
     <label for="Movie Hour"><b>Movie Hour</b></label>
-    <input type="hidden" name="movie[hour]">
+    <input type="hidden" name="movie[hour]" id='movie-hour'>
 	
 	<!-- Standard Section -->
+	<div class="Standard">
     <label for="Standard Adult"><b>Standard Adult</b></label>
-    <select type="select" name="seats[STA]">
+    <select type="select" name="seats[STA]" id='seats-STA'>
 	<option value="ticketNumber">Select number of tickets...</option>
 	<option value="1">1</option>
         <option value="2">2</option>
@@ -335,7 +337,7 @@
 		
 	
 	 <label for="Standard Concession"><b>Standard Concession</b></label>
-    <select type="select" name="seats[STP]">
+    <select type="select" name="seats[STP]" id='seats-STP'>
 	<option value="ticketNumber">Select number of tickets...</option>
 	<option value="1">1</option>
         <option value="2">2</option>
@@ -350,7 +352,7 @@
 		</select>
 	
 	<label for="Standard Child"><b>Standard Child</b></label>
-    <select type="select" name="seats[STC]">
+    <select type="select" name="seats[STC]" id='seats-STC'>
 	<option value="ticketNumber">Select number of tickets...</option>
 	<option value="1">1</option>
         <option value="2">2</option>
@@ -364,10 +366,11 @@
         <option value="10">10</option>
 		</select>
 	
-	
+	</div>
 	<!-- First Class Section -->
+	<div class="FirstClass">
 	<label for="First Class Adult"><b>First Class Adult</b></label>
-    <select type="select" name="seats[FCA]">
+    <select type="select" name="seats[FCA]" id='seats-FCA'>
 	<option value="ticketNumber">Select number of tickets...</option>
 	<option value="1">1</option>
         <option value="2">2</option>
@@ -382,7 +385,7 @@
 </select>
 	
 	<label for="First Class Concession"><b>First Class Concession</b></label>
-    <select type="select" name="seats[FCP]">
+    <select type="select" name="seats[FCP]" id='seats-FCP'>
 	<option value="ticketNumber">Select number of tickets...</option>
 	<option value="1">1</option>
         <option value="2">2</option>
@@ -397,7 +400,7 @@
 </select>
 	
 	<label for="First Class Child"><b>First Class Child</b></label>
-    <select type="select" name="seats[FCC]">
+    <select type="select" name="seats[FCC]" id='seats-FCC'>
 	<option value="ticketNumber">Select number of tickets...</option>
 	<option value="1">1</option>
         <option value="2">2</option>
@@ -411,29 +414,34 @@
         <option value="10">10</option>
 </select>
 	
+	</div>
 	
 	<!-- Customer Details -->
+	<div class="CustomerDetails">
 	<label for="Name"><b>Name</b></label>
-    <input type="text" name="cust[name]" required>
+    <input type="text" name="cust[name]" id='cust-name' required>
 	
 	<label for="Email"><b>Email</b></label>
-    <input type="email" name="cust[email]" required>
+    <input type="email" name="cust[email]" id='cust-email' required>
 	
 	<label for="Mobile"><b>Mobile</b></label>
-    <input type="tel" name="cust[mobile]" required>
+    <input type="tel" name="cust[mobile]" id='cust-mobile' required>
 	
 	<label for="Credit Card"><b>Credit Card</b></label>
-    <input type="text" name="cust[card]" required>
+    <input type="text" name="cust[card]" id='cust-card' required>
 	
 	<label for="Expiry"><b>Expiry</b></label>
-    <input type="month" name="cust[expiry]" required>
+    <input type="month" name="cust[expiry]" id='cust-expiry' required>
 	
-	
+	</div>
 	
 	
     <hr>
 
     <p> </p>
+	<label for="Total"><b>Total</b></label>
+    <input type="hidden" name="Total" id='total'>
+	
     <button type="submit" class="bookbtn" name="order" >Book Now!</button>
   </div>
 
