@@ -320,7 +320,7 @@ height: 45px;
 
 
 .CustomerDetails{
-	float: right;
+	display: block;
 	
 }
 
@@ -342,3 +342,22 @@ height: 45px;
 
 
 
+
+
+
+
+#synopsisACT{
+    display: none;
+}
+
+#synopsisANM{
+    display: none;
+}
+
+#synopsisRMC{
+    display: none;
+}
+
+#synopsisAHF{
+    display: none;
+}
