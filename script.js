@@ -52,8 +52,10 @@ seat_prices["seats-FCP"]=27.00;
 seat_prices["seats-FCC"]=24.00;
 
 //Calculation
-function calculateTotal(qty, price){
-	return qty * seat_prices;
+function calculateTotal(value, seat_prices){
+	return value * seat_prices;
+	
+}
 
 function getSeatPrice() {
 	var seatPrice=0;
@@ -65,7 +67,7 @@ function getSeatPrice() {
 	var seatFCP = form.elements["seats-FCP"];
 	var seatFCC = form.elements["seats-FCC"];
 	
-	seatPrice = seat_prices[seatSTA.value,seatSTP.value,seatSTC.value,seatFCA.value,seatFCP.value,seatFCC.value];
+seatPrice = seat_prices[seatSTA.value,seatSTP.value,seatSTC.value,seatFCA.value,seatFCP.value,seatFCC.value];
 	
 	return seatPrice;
 

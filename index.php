@@ -320,8 +320,8 @@
 	<!-- Standard Section -->
 	<div class="Standard">
     <label for="Standard Adult"><b>Standard Adult</b></label>
-    <select type="select" name="seats[STA]" id='seats-STA' onchange="calculateTotal()">
-	<option value="ticketNumber">Select number of tickets...</option>
+    <select type="select" name="seats[STA]" id='seats-STA' onchange="calculateTotal(this.value)" required>
+	<option value="ticketNumber" disabled selected>Select number of tickets...</option>
 	<option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -337,8 +337,8 @@
 		
 	
 	 <label for="Standard Concession"><b>Standard Concession</b></label>
-    <select type="select" name="seats[STP]" id='seats-STP' onchange="calculateTotal()">
-	<option value="ticketNumber">Select number of tickets...</option>
+    <select type="select" name="seats[STP]" id='seats-STP' onchange="calculateTotal(this.value)" required>
+	<option value="ticketNumber" disabled selected>Select number of tickets...</option>
 	<option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -352,8 +352,8 @@
 		</select>
 	
 	<label for="Standard Child"><b>Standard Child</b></label>
-    <select type="select" name="seats[STC]" id='seats-STC' onchange="calculateTotal()">
-	<option value="ticketNumber">Select number of tickets...</option>
+    <select type="select" name="seats[STC]" id='seats-STC' onchange="calculateTotal(this.value)" required>
+	<option value="ticketNumber" disabled selected>Select number of tickets...</option>
 	<option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -370,8 +370,8 @@
 	<!-- First Class Section -->
 	<div class="FirstClass">
 	<label for="First Class Adult"><b>First Class Adult</b></label>
-    <select type="select" name="seats[FCA]" id='seats-FCA' onchange="calculateTotal()">
-	<option value="ticketNumber">Select number of tickets...</option>
+    <select type="select" name="seats[FCA]" id='seats-FCA' onchange="calculateTotal(this.value)" required>
+	<option value="ticketNumber" disabled selected>Select number of tickets...</option>
 	<option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -385,8 +385,8 @@
 </select>
 	
 	<label for="First Class Concession"><b>First Class Concession</b></label>
-    <select type="select" name="seats[FCP]" id='seats-FCP' onchange="calculateTotal()">
-	<option value="ticketNumber">Select number of tickets...</option>
+    <select type="select" name="seats[FCP]" id='seats-FCP' onchange="calculateTotal(this.value)" required>
+	<option value="ticketNumber" disabled selected>Select number of tickets...</option>
 	<option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -400,8 +400,8 @@
 </select>
 	
 	<label for="First Class Child"><b>First Class Child</b></label>
-    <select type="select" name="seats[FCC]" id='seats-FCC' onchange="calculateTotal()">
-	<option value="ticketNumber">Select number of tickets...</option>
+    <select type="select" name="seats[FCC]" id='seats-FCC' onchange="calculateTotal(this.value)" required>
+	<option value="ticketNumber" disabled selected>Select number of tickets...</option>
 	<option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -438,10 +438,12 @@
 	
     <hr>
 
-    <p id="total"></p>
+	<label><b>Total Amount</b></label>
+        <input  name="total" id="total" type="text" readonly>
+ 
 	<br><br>
 	
-    <button type="submit" class="bookbtn" name="order" id='bookbtn' >Book Now!</button>
+    <button type="submit" class="bookbtn" name="order" id='bookbtn' onclick="calculateTotal()" >Book Now!</button>
   </div>
 
  
