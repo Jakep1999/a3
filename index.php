@@ -302,7 +302,7 @@
             
                 <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post" id="seatform" onsubmit="return false;">
 
-  <div class="container">
+  <div id="container" class="container">
     <h1>Book a Movie</h1>
     <p>You can view and book the movie you have selected, please choose a time and fill in the required fields to proceed.</p>
     <hr>
