@@ -2,7 +2,7 @@
 <html lang='en'>
     <head>
         <meta charset="utf-8">
-        <title>Assignment 2</title>
+        <title>Assignment 3</title>
         <!-- Keep wireframe.css for debugging, add your css to style.css -->
         <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
         <!-- my two web fonts  -->
@@ -242,7 +242,7 @@
                         </div>  
                     </div>
                     <section id="bookingsCard">
-                        <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post" id="seatform" onsubmit="return false;">
+                        <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post" id="seatform">
                             <div  id="container" class="container">
                                 <h1>Book a Movie</h1>
                                 <p>You can view and book the movie you have selected, please choose a time and fill in the required fields to proceed.</p>
@@ -264,7 +264,7 @@
                                 <!-- Standard Section -->
                                 <div class="Standard">
                                     <label for="Standard Adult"><b>Standard Adult</b></label>
-                                    <select type="select" name="seats[STA]" id='seats-STA' onchange="calculateTotal()" required>
+                                    <select type="select" name="seats[STA]" id='seats-STA' onchange="calculateTotal()">
                                         <option value="">Select number of tickets...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -278,7 +278,7 @@
                                         <option value="10">10</option>
                                     </select>
                                     <label for="Standard Concession"><b>Standard Concession</b></label>
-                                    <select type="select" name="seats[STP]" id='seats-STP' onchange="calculateTotal()"required>
+                                    <select type="select" name="seats[STP]" id='seats-STP' onchange="calculateTotal()">
                                         <option value="">Select number of tickets...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -292,7 +292,7 @@
                                         <option value="10">10</option>
                                     </select>
                                     <label for="Standard Child"><b>Standard Child</b></label>
-                                    <select type="select" name="seats[STC]" id='seats-STC' onchange="calculateTotal()" required>
+                                    <select type="select" name="seats[STC]" id='seats-STC' onchange="calculateTotal()">
                                         <option value="">Select number of tickets...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -309,7 +309,7 @@
                                 <!-- First Class Section -->
                                 <div class="FirstClass">
                                     <label for="First Class Adult"><b>First Class Adult</b></label>
-                                    <select type="select" name="seats[FCA]" id='seats-FCA' onchange="calculateTotal()" required>
+                                    <select type="select" name="seats[FCA]" id='seats-FCA' onchange="calculateTotal()">
                                         <option value="">Select number of tickets...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -323,7 +323,7 @@
                                         <option value="10">10</option>
                                     </select>
                                     <label for="First Class Concession"><b>First Class Concession</b></label>
-                                    <select type="select" name="seats[FCP]" id='seats-FCP' onchange="calculateTotal()" required>
+                                    <select type="select" name="seats[FCP]" id='seats-FCP' onchange="calculateTotal()">
                                         <option value="">Select number of tickets...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -337,7 +337,7 @@
                                         <option value="10">10</option>
                                     </select>
                                     <label for="First Class Child"><b>First Class Child</b></label>
-                                    <select type="select" name="seats[FCC]" id='seats-FCC' onchange="calculateTotal()" required>
+                                    <select type="select" name="seats[FCC]" id='seats-FCC' onchange="calculateTotal()">
                                         <option value="">Select number of tickets...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -353,6 +353,10 @@
                                 </div>
                                 <!-- Customer Details -->
                                 <div class="CustomerDetails">
+								
+								<label for="CustomerDetails"><b>CUSTOMER DETAILS</b></label>
+                                <br><br>
+								
                                     <label for="Name"><b>Name</b></label>
                                     <input type="text" name="cust[name]" id='cust-name' required>
                                     <label for="Email"><b>Email</b></label>
