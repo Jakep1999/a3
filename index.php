@@ -2,7 +2,7 @@
 <html lang='en'>
     <head>
         <meta charset="utf-8">
-        <title>Assignment 2</title>
+        <title>Assignment 3</title>
 
         <!-- Keep wireframe.css for debugging, add your css to style.css -->
         <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
@@ -489,7 +489,7 @@
                                 <p id="total"></p>
                                 <br><br>
 
-                                <button type="submit" class="bookbtn" name="order" id='bookbtn' >Book Now!</button>
+                                <button type="submit" value="submit" class="bookbtn" name="order" id='bookbtn' >Book Now!</button>
                             </div>
 
 
