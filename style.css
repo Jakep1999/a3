@@ -1,4 +1,4 @@
-html {
+html{
     scroll-behavior: smooth;
 }
 
@@ -43,16 +43,12 @@ background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.1)),url('../../medi
 
 #linktoSynopsis
 {
+    visibility: hidden;
     margin:10px;
     background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.1)),url('../../media/spacephoto.png');
 }
 
-#linktoBooking
-{
-    margin:10px;
-    background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.1)),url('../../media/jellyfish_space.jpg');
-background-size: cover;);
-}
+
 
 
 #dolbylogo{
@@ -113,33 +109,47 @@ header {
 
 /************** NAV BAR */
 
-.topnav {
+#topnav {
+    display:inline-block;
     overflow: hidden;
     background-color: #333;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    padding-bottom: 14px;
 }
 
-.topnav a {
-    float: left;
+#topnav a {
+    float:left;
     color: #f2f2f2;
     text-align: center;
-    padding: 10px 12px;
+    padding: 12px 12px;
     font-size: 17px;
-    width: 10%;
+    width: 15%;
 }
 
-.topnav a:hover {
+#topnav a:hover {
     background-color: #99738E;
     color: black;
 }
 
-.topnav a.active {
+.active {
     background-color: #553d67;
 
     color: white;
 }
+
+
+    ul{
+         list-style:none;
+    }
+
+
+
+
+
+
+
 
 /***** NOW SHOWING, this forms a grid ****/
 
@@ -156,7 +166,7 @@ header {
     
 
 
-clear:both;
+
 }
 
 
@@ -165,8 +175,10 @@ clear:both;
 .nowShowing_Image {
 
     max-width:33%;
-    clear:both;
-    float:left;
+    display: inline-block;
+    
+    /*clear:both;
+    float:left;*/
      
 }
 
@@ -175,11 +187,11 @@ clear:both;
 }
 .nowShowing_Content{
    
-float:right;
+display: inline-block;
 }
 
 .column {
-    float: left;
+    display: inline-block;
     width: 30%;
     padding: 0 10px;
     margin:10px;
@@ -249,13 +261,13 @@ float:right;
 /*   synopsis area   */
 
 
-.synopsis_Card{
+#synopsis_Card{
+    
     border: double;
-}
-.synopsis_content{
     padding: 20px 20px 20px 20px;
-    float:left;
+
 }
+
 
 .synopsis_Trailer{
 padding: 20px 20px 20px 20px;
@@ -360,4 +372,9 @@ height: 45px;
 
 #synopsisAHF{
     display: none;
+}
+
+
+#bookingsCard{
+    display:none;
 }

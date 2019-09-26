@@ -28,13 +28,15 @@
         </header>
 
         <nav>
-            <div class="topnav">
-                <a class="active" href="index.php">Home</a>
-                <a href="#linktoAboutUs">About Us</a>
-                <a href="#linktoPrices">Prices</a>
-                <a href="#linktoNowShowing">Now Showing</a>
-                <a href="../index.html">Back to A1</a>
-            </div>
+            <div id="topnav">
+            <ul>
+                <li><a href="#linktoAboutUs">About Us</a></li>
+                <li><a href="#linktoPrices">Prices</a></li>
+                <li><a href="#linktoNowShowing">Now Showing</a></li>
+             
+               <li><a href="../index.html">Back to A1</a></li>
+            </ul>
+                </div>
         </nav>
 
 
@@ -243,7 +245,7 @@
                     </div>
                 </div>
 
-            </section>
+            
 
 
 
@@ -251,8 +253,8 @@
             <section  id="linktoSynopsis">
 
 
-                <div class="synopsis_Card">
-                    <div class ="synopsis_content">
+                <div id="synopsis_Card">
+                  
                         <div id="synopsisACT">
                         <h2>Avengers: Endgame - [MA15+]</h2>
                         <h3> Plot Description:</h3>
@@ -337,19 +339,19 @@
                         
                     </div>
 
-                </div>
+             
 
 
-            </section>
-
-
-
+            
 
 
 
-            <section  id="linktoBooking">
 
 
+
+            
+
+                <section id="bookingsCard">
                 <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post" id="seatform" onsubmit="return false;">
 
                     <div class="container">
@@ -438,8 +440,8 @@
 
 
                         </form>
-
-
+                    </section>
+</section>
                     </section>
                 </main>
 
