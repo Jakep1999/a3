@@ -153,7 +153,6 @@ var seat_prices = {
   "FCC": 24.00
 }
 
-
 window.addEventListener("load",function() { // when page has loaded
   document.getElementById("container").addEventListener("change",function(e) {
 
@@ -168,3 +167,67 @@ window.addEventListener("load",function() { // when page has loaded
     }
   })
 })
+
+//Regex and validation for form fields
+
+function validate(cust-name) {
+    var regex = /^[a-zA-Z \-.']{1,100}$/;
+    var ctrl =  document.getElemetnById(cust-name);
+
+    if (regex.test(ctrl.value)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+// Will update
+        var phoneExpression = /^(\(04\)|04|\+614)( ?\d){8}$/;
+
+        // Valid
+        var phoneNumber1 = "0411234567";
+        var phoneNumber2 = "04 11234567";
+        var phoneNumber3 = "04 1123 4567";
+        var phoneNumber4 = "041123 5678";
+		var phoneNumber5 = "0400 123 456";
+
+        // Invalid
+        var phoneNumber6 = "3892 11";
+        var phoneNumber7 = "daniel 0411 234 567";
+        var phoneNumber8 = "jake";
+
+        if (phoneNumber1.match(phoneExpression)) {
+            console.log('Valid 10 digit mobile number with no spaces');
+        }
+
+        if (phoneNumber2.match(phoneExpression)) {
+            console.log('Valid 10 digit mobile number with space after Aus code');
+        }
+
+        if (phoneNumber3.match(phoneExpression)) {
+            console.log('Valid 10 digit mobile number with space after the Aus code');
+        }
+
+        if (phoneNumber4.match(phoneExpression)) {
+            console.log('Valid 10 digit mobile number with a space for the last 4 digits');
+        }
+
+        if (!phoneNumber5.match(phoneExpression)) {
+            console.log('Valid 10 digit code with correct spaces');
+        }
+		
+		if (!phoneNumber6.match(phoneExpression)) {
+            console.log('Invalid mobile number');
+        }
+		
+
+        if (!phoneNumber7.match(phoneExpression)) {
+            console.log('A name and space before a valid spaced 10 digit mobile number');
+        }
+
+        if (!phoneNumber8.match(phoneExpression)) {
+            console.log('No valid number entered, a name appears to have been entered instead');
+        }
+
+
