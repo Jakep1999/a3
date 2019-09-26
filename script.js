@@ -144,43 +144,27 @@ window.addEventListener("scroll", event => {
 
 
 /* ----- JAKES CODE ---- */
-
-
-var seat_prices = new Array();
-seat_prices["None"]=0;
-seat_prices["seats-STA"]=19.80;
-seat_prices["seats-STP"]=17.50;
-seat_prices["seats-STC"]=15.30;
-seat_prices["seats-FCA"]=30.00;
-seat_prices["seats-FCP"]=27.00;
-seat_prices["seats-FCC"]=24.00;
-
-//Calculation
-function calculateTotal(qty, price){
-    return qty * seat_prices;
+var seat_prices = {
+  "STA": 19.80,
+  "STP": 17.50,
+  "STC": 15.30,
+  "FCA": 30.00,
+  "FCP": 27.00,
+  "FCC": 24.00
 }
-    function getSeatPrice() {
-        var seatPrice=0;
-        var form =document.forms["seatform"];
-        var seatSTA = form.elements["seats-STA"];
-        var seatSTP = form.elements["seats-STP"];
-        var seatSTC = form.elements["seats-STC"];
-        var seatFCA = form.elements["seats-FCA"];
-        var seatFCP = form.elements["seats-FCP"];
-        var seatFCC = form.elements["seats-FCC"];
 
-        seatPrice = seat_prices[seatSTA.value,seatSTP.value,seatSTC.value,seatFCA.value,seatFCP.value,seatFCC.value];
 
-        return seatPrice;
+window.addEventListener("load",function() { // when page has loaded
+  document.getElementById("container").addEventListener("change",function(e) {
 
+    var tgt = e.target; // whatever was changed
+    if (tgt.tagName==="SELECT") {
+      var total = 0;
+      Object.keys(seat_prices).forEach(function(key) { // get the keys from the object
+        var val = document.getElementById("seats-"+key).value;
+        total += val==="ticketNumber"?0: val*seat_prices[key]; // gets the amount
+      })
+      document.getElementById("total").value=total.toFixed(2); // shows result with two decimals
     }
-    function getTotal() {
-
-
-        var total = seatSTA + seatSTP + seatSTC + seatFCA + seatFCP + seatFCC;
-
-
-        document.getElementById('total').innerHTML = "Total Price for Tickets $" +total;
-    }
-    
-
+  })
+})
