@@ -218,8 +218,16 @@ function validateName() {
 
 function validateDate()
 {
+      //Grab the value from your Textbox
+      var currentValue = document.getElementById('cust-expiry').value;
+      
+      
+      var regex = new RegExp("^\\d{4}(0[1-9]|1[0-2])$");
+      
+      //This will alert true or false depending on if the value is valid
+      alert(regex.test(currentValue));
+    }
 
-}
 
 //Regex for Mobile Number 
 function validateNumber() {
