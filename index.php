@@ -242,7 +242,7 @@
                         </div>  
                     </div>
                     <section id="bookingsCard">
-                        <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post" id="seatform">
+                        <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post" id="seatform" onsubmit="return validate()">
                             <div  id="container" class="container">
                                 <h1>Book a Movie</h1>
                                 <p>You can view and book the movie you have selected, please choose a time and fill in the required fields to proceed.</p>
@@ -358,7 +358,7 @@
                                 <br><br>
 								
                                     <label for="Name"><b>Name</b></label>
-                                    <input type="text" name="cust[name]" id='cust-name' required>
+                                    <input type="text" name="cust[name]" onkeydown="validate();" id='cust-name' required>
                                     <label for="Email"><b>Email</b></label>
                                     <input type="email" name="cust[email]" id='cust-email' required>
                                     <label for="Mobile"><b>Mobile</b></label>
@@ -372,7 +372,7 @@
                                 <label><b>Total Amount</b></label>
         <input  name="total" id="total" type="text" readonly>
                                 <br><br>
-                                <button type="submit" class="bookbtn" name="order" id='bookbtn' >Book Now!</button>
+                                <button type="submit" class="bookbtn" name="order" id='bookbtn' onclick="validate();" >Book Now!</button>
                             </div>
                         </form>
                     </section>

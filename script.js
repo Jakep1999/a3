@@ -140,10 +140,6 @@ window.addEventListener("scroll", event => {
 
 
 
-
-
-
-/* ----- JAKES CODE ---- */
 var seat_prices = {
   "STA": 19.80,
   "STP": 17.50,
@@ -153,36 +149,64 @@ var seat_prices = {
   "FCC": 24.00
 }
 
+var discountseat_prices = {
+  "STA": 14.00,
+  "STP": 12.50,
+  "STC": 11.00,
+  "FCA": 24.00,
+  "FCP": 22.50,
+  "FCC": 21.00
+}
+	
+	
+	/* function discount() {
+if (date.getDay()>0 && date.getDay() <6 && hour === "[T12]") give discount */
+
+
 window.addEventListener("load",function() { // when page has loaded
   document.getElementById("container").addEventListener("change",function(e) {
 
     var tgt = e.target; // whatever was changed
-    if (tgt.tagName==="SELECT") {
+  if (tgt.tagName==="SELECT") {
       var total = 0;
       Object.keys(seat_prices).forEach(function(key) { // get the keys from the object
         var val = document.getElementById("seats-"+key).value;
         total += val==="ticketNumber"?0: val*seat_prices[key]; // gets the amount
+		
+	  /* else if ((movieDAYs == "MON", "TUE", "WED", "THU", "FRI"  && movieHOURs == ["T12"])) {
+		Object.keys(discountseat_prices).forEach(function(key) { // get the keys from the object
+        var val = document.getElementById("seats-"+key).value;
+        total += val==="ticketNumber"?0: val*discountseat_prices[key]; // gets the amount */
+			
       })
       document.getElementById("total").value=total.toFixed(2); // shows result with two decimals
     }
   })
 })
+  
+
+
+
 
 //Regex and validation for form fields
 
-function validate(cust-name) {
+function validate() {
     var regex = /^[a-zA-Z \-.']{1,100}$/;
-    var ctrl =  document.getElemetnById(cust-name);
+    var name =  document.getElemetnById('cust-name');
 
-    if (regex.test(ctrl.value)) {
+    if(!regex.test(name)){
+        alert('Please enter your full name (first & last name).');
+        document.getElementById('cust-name').focus();
+        return false;
+    }else{
+        alert('Valid name given.');
         return true;
     }
-    else {
-        return false;
-    }
-}
 
-// Will update
+
+
+
+
         var phoneExpression = /^(\(04\)|04|\+614)( ?\d){8}$/;
 
         // Valid
@@ -191,11 +215,12 @@ function validate(cust-name) {
         var phoneNumber3 = "04 1123 4567";
         var phoneNumber4 = "041123 5678";
 		var phoneNumber5 = "0400 123 456";
+		var phoneNumber6 = "+61400123456";
 
         // Invalid
-        var phoneNumber6 = "3892 11";
-        var phoneNumber7 = "daniel 0411 234 567";
-        var phoneNumber8 = "jake";
+        var phoneNumber7 = "3892 11";
+        var phoneNumber8 = "daniel 0411 234 567";
+        var phoneNumber9 = "jake";
 
         if (phoneNumber1.match(phoneExpression)) {
             console.log('Valid 10 digit mobile number with no spaces');
@@ -218,16 +243,25 @@ function validate(cust-name) {
         }
 		
 		if (!phoneNumber6.match(phoneExpression)) {
+            console.log('Valid Mobile phone number starting with australian code');
+        }
+		
+		if (!phoneNumber7.match(phoneExpression)) {
             console.log('Invalid mobile number');
         }
 		
 
-        if (!phoneNumber7.match(phoneExpression)) {
+        if (!phoneNumber8.match(phoneExpression)) {
             console.log('A name and space before a valid spaced 10 digit mobile number');
         }
 
-        if (!phoneNumber8.match(phoneExpression)) {
+        if (!phoneNumber9.match(phoneExpression)) {
             console.log('No valid number entered, a name appears to have been entered instead');
         }
+}
+
+
+
+
 
 
