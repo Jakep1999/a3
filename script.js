@@ -211,14 +211,50 @@ function validateName() {
         return true;
     }
 }
-
-//Regex for Credit card
-function validateCC() {
 	
+//Regex for Credit card
+var visaPattern = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
+var mastPattern = /^(?:5[1-5][0-9]{14})$/;
+var amexPattern = /^(?:3[47][0-9]{13})$/;
+var discPattern = /^(?:6(?:011|5[0-9][0-9])[0-9]{12})$/; 
+var dinersPattern = /^3(?:0[0-5]|[68][0-9])[0-9]{11}/;
+var jcbPattern = /^(?:2131|1800|35\d{3})\d{11}/;
+
+function validateCC() {
+
+    var ccNum  = document.getElementById("cardNum").value;
+
+    var isVisa = visaPattern.test( ccNum ) === true;
+    var isMast = mastPattern.test( ccNum ) === true;
+    var isAmex = amexPattern.test( ccNum ) === true;
+    var isDisc = discPattern.test( ccNum ) === true;
+	var isDiners = dinersPattern.test( ccNum ) === true;
+	var isJCB = jcbPattern.test( ccNum ) === true;
+
+    if( isVisa || isMast || isAmex || isDisc || isDiners || isJCB ) {
+        // at least one regex matches, so the card number is valid.
+
+        if( isVisa ) {
+            // Visa-specific logic goes here
+        }
+        else if( isMast ) {
+             // Mastercard-specific logic goes here
+        }
+        else if( isAmex ) {
+            // AMEX-specific logic goes here
+        }
+        else if( isDisc ) {
+            // Discover-specific logic goes here
+        }
+		else if( isDiners ) {
+		}
+		else if ( isJCB ) {
+    }
+    else {
+        alert("Please enter a valid card number.");
+    }
 }
-
-
-
+}
 
 //Regex for Credit Card Expiry 
 function validateDate()
