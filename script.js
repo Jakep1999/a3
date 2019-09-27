@@ -188,7 +188,7 @@ window.addEventListener("load",function() { // when page has loaded
 
 
 
-//Regex and validation for form fields
+//validation for form fields
 function validateForm() {
 	return validateName;
 	return validateDate;
@@ -197,7 +197,7 @@ function validateForm() {
 }
 	
 	
-	
+	//Regex for Name
 function validateName() {
     var regex = /^[a-zA-Z \-.']{1,100}$/;
     var name =  document.getElemetnById('cust-name');
@@ -221,6 +221,7 @@ function validateDate()
 
 }
 
+//Regex for Mobile Number 
 function validateNumber() {
         var phoneExpression = /^(\(04\)|04|\+614)( ?\d){8}$/;
 
