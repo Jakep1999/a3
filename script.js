@@ -189,8 +189,16 @@ window.addEventListener("load",function() { // when page has loaded
 
 
 //Regex and validation for form fields
-
-function validate() {
+function validateForm() {
+	return validateName;
+	return validateDate;
+	return validateNumber;
+	
+}
+	
+	
+	
+function validateName() {
     var regex = /^[a-zA-Z \-.']{1,100}$/;
     var name =  document.getElemetnById('cust-name');
 
@@ -202,11 +210,18 @@ function validate() {
         alert('Valid name given.');
         return true;
     }
+}
 
 
+//Regex for Credit Card Expiry 
 
 
+function validateDate()
+{
 
+}
+
+function validateNumber() {
         var phoneExpression = /^(\(04\)|04|\+614)( ?\d){8}$/;
 
         // Valid
