@@ -140,7 +140,6 @@ window.addEventListener("scroll", event => {
 
 
 
-
 var seat_prices = {
   "STA": 19.80,
   "STP": 17.50,
@@ -183,9 +182,6 @@ window.addEventListener("load",function() { // when page has loaded
       document.getElementById("total").value=total.toFixed(2); // shows result with two decimals
     }
   })
-<<<<<<< HEAD
-})
-=======
 })
   
 
@@ -346,7 +342,6 @@ function validatePhone() {
         }
 
 }
-
 
 
 

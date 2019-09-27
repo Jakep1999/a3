@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <title>Assignment 3</title>
-
         <!-- Keep wireframe.css for debugging, add your css to style.css -->
         <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
         <!-- my two web fonts  -->
@@ -23,7 +22,6 @@
                     <li><a href="#linktoAboutUs">About Us</a></li>
                     <li><a href="#linktoPrices">Prices</a></li>
                     <li><a href="#linktoNowShowing">Now Showing</a></li>
-
                     <li><a href="../index.html">Back to A1</a></li>
                 </ul>
             </div>
@@ -40,41 +38,20 @@
                         <br><br>
                         Our upgrades include brand new premium seating for all facilities:
                         <br><br>
-
                         New leather recliners for standard sessions: <br>
                         <img class="seatingImage" src="../../media/standardseat_trans.png" alt="Standard Seats"> 
                         <br><br>
-
-
                         World class seating for our First Class sessions:<br>
                         <img class="seatingImage" src="../../media/Verona-Twin.png" alt="Premium Seats">  
                         <br><br>
-
                         <br><br>
-
-
-
                         We are also very excited to announce our theatre now features 3D Dolby Vision with Dolby Atmos audio!
                         <br>
-
                         <img id="dolbylogo" src="../../media/dolby-vision-dolby-atmos_TRANS.png" alt="dolby vision & atmos">
-
-
-
-
                         <br>
-
-
-
                     </p>
                 </div>
             </section>
-
-
-
-
-
-
             <section id="linktoPrices">
                 <div class="individualSection">
                     <h1>Prices </h1>
@@ -117,122 +94,84 @@
                     </table>
                 </div>
             </section>
-
-
-
-
-
-
-
             <section  id="linktoNowShowing">
                 <h1>Now Showing</h1>
-                <div class="row">
-
-                    <div class="column">
-                        <div class="nowShowing_Card" id="moviePanelACT" onclick=showACT()>
-                            <img src="../../media/poster_endgame.jpg" alt="Endgame poster" class="nowShowing_Image">
-
-                            <div class="nowShowing_Content">
-                                <h2>Avengers: Endgame</h2>
-                                <h3> SHOWING:</h3>                                
-                                <p>
-                                    Wed:  9pm (T21)<br>
-                                    Thur: 9pm (T21)<br>
-                                    Fri:  9pm (T21)<br>
-                                    Sat:  6pm (T18)<br>
-                                    Sun:  6pm (T18)<br>
-                                </p>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="column">
-                        <div class="nowShowing_Card" id = "moviePanelANM" onclick=showANM()>
-                            <div>
-                                <img src="../../media/poster_dumbo.jpg" alt="Dumbo poster" class="nowShowing_Image">
-                            </div>
-                            <div class="nowShowing_Content">
-                                <h2>Dumbo</h2>
-                                <h3> SHOWING:</h3>
-                                <p>
-                                    Mon:  12pm (T12)<br>
-                                    Tues: 12pm (T12)<br>
-                                    Wed:  6pm (T18)<br>
-                                    Thur: 6pm (T18)<br>
-                                    Fri:  6pm (T18)<br>
-                                    Sat:  6pm (T18)<br>
-                                    Sun:  12pm (T12)<br>
-                                </p>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="column">
-                        <div class="nowShowing_Card" id="moviePanelRMC" onclick=showRMC()>
-                            <div>
-                                <img src="../../media/poster_topendwedding.jpg" alt="Top End Wedding poster" class="nowShowing_Image">
-                            </div>
-                            <div class="nowShowing_Content">
-                                <h2>Top End Wedding</h2>
-                                <h3> SHOWING:</h3>
-                                <p>
-                                    Tues: 6pm (T18)<br>
-                                    Sat:  3pm (T15)<br>
-                                    Sun:  3pm (T15)<br>
-                                </p>
-
-
+                <div class="NowShowing">
+                    <div class="row">
+                        <div class="column">
+                            <div class="nowShowing_Card" id="moviePanelACT" onclick=showACT()>
+                                <img src="../../media/poster_endgame.jpg" alt="Endgame poster" class="nowShowing_Image">
+                                <div class="nowShowing_Content">
+                                    <h2>Avengers: Endgame</h2>
+                                    <h3> SHOWING:</h3>                                
+                                    <p>
+                                        Wed:  9pm (T21)<br>
+                                        Thur: 9pm (T21)<br>
+                                        Fri:  9pm (T21)<br>
+                                        Sat:  6pm (T18)<br>
+                                        Sun:  6pm (T18)<br>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-
-
-                    <div class="column">
-                        <div class="nowShowing_Card" id="moviePanelAHF"onclick=showAHF()>
-                            <div>
-                                <img src="../../media/poster_thehappyprince.jpg" alt="The Happy Prince poster" class="nowShowing_Image">
+                        <div class="column">
+                            <div class="nowShowing_Card" id = "moviePanelANM" onclick=showANM()>
+                                <div>
+                                    <img src="../../media/poster_dumbo.jpg" alt="Dumbo poster" class="nowShowing_Image">
+                                </div>
+                                <div class="nowShowing_Content">
+                                    <h2>Dumbo</h2>
+                                    <h3> SHOWING:</h3>
+                                    <p>
+                                        Mon:  12pm (T12)<br>
+                                        Tues: 12pm (T12)<br>
+                                        Wed:  6pm (T18)<br>
+                                        Thur: 6pm (T18)<br>
+                                        Fri:  6pm (T18)<br>
+                                        Sat:  6pm (T18)<br>
+                                        Sun:  12pm (T12)<br>
+                                    </p>
+                                </div>
                             </div>
-
-                            <div class="nowShowing_Content">
-                                <h2>The Happy Prince</h2>
-                                <h3> SHOWING:</h3>
-                                <p>
-                                    Wed:  12pm (T12)<br>
-                                    Thur: 12pm (T12)<br>
-                                    Fri:  12pm (T12)<br>
-                                    Sat:  9pm (T21)<br>
-                                    Sun:  9pm (T21)<br>
-                                </p>
+                        </div>
+                        <div class="column">
+                            <div class="nowShowing_Card" id="moviePanelRMC" onclick=showRMC()>
+                                <div>
+                                    <img src="../../media/poster_topendwedding.jpg" alt="Top End Wedding poster" class="nowShowing_Image">
+                                </div>
+                                <div class="nowShowing_Content">
+                                    <h2>Top End Wedding</h2>
+                                    <h3> SHOWING:</h3>
+                                    <p>
+                                        Tues: 6pm (T18)<br>
+                                        Sat:  3pm (T15)<br>
+                                        Sun:  3pm (T15)<br>
+                                    </p>
+                                </div>
                             </div>
-
-
-
-
+                        </div>
+                        <div class="column">
+                            <div class="nowShowing_Card" id="moviePanelAHF"onclick=showAHF()>
+                                <div>
+                                    <img src="../../media/poster_thehappyprince.jpg" alt="The Happy Prince poster" class="nowShowing_Image">
+                                </div>
+                                <div class="nowShowing_Content">
+                                    <h2>The Happy Prince</h2>
+                                    <h3> SHOWING:</h3>
+                                    <p>
+                                        Wed:  12pm (T12)<br>
+                                        Thur: 12pm (T12)<br>
+                                        Fri:  12pm (T12)<br>
+                                        Sat:  9pm (T21)<br>
+                                        Sun:  9pm (T21)<br>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
                 <section  id="linktoSynopsis">
-
-
                     <div id="synopsis_Card">
-
                         <div id="synopsisACT">
                             <h2>Avengers: Endgame - [MA15+]</h2>
                             <h3> Plot Description:</h3>
@@ -246,13 +185,10 @@
                             <button onclick= book(0,6,2)>Book Sunday!</button>
                             <br>
                             <br>
-
                             <div class="synopsis_Trailer">
                                 <iframe src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>    
-
-
                         <div id="synopsisANM">
                             <h2>DUMBO</h2>
                             <h3> Plot Description:</h3>
@@ -268,14 +204,10 @@
                             <button onclick= book(1,6,0)>Book Sunday!</button>
                             <br>
                             <br>
-
                             <div class="synopsis_Trailer">
                                 <iframe src="https://www.youtube.com/embed/-QPdRfqTnt4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>  
-
-
-
                         <div id="synopsisRMC">
                             <h2>TOP END WEDDING</h2>
                             <h3> Plot Description:</h3>
@@ -290,14 +222,7 @@
                             <div class="synopsis_Trailer">
                                 <iframe src="https://www.youtube.com/embed/uoDBvGF9pPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
-
                         </div>  
-
-
-
-
-
-
                         <div id="synopsisAHF">
                             <h2>THE HAPPY PRINCE</h2>
                             <h3> Plot Description:</h3>
@@ -315,12 +240,10 @@
                                 <iframe src="https://www.youtube.com/embed/tXANCJQkUIE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>  
-
                     </div>
-
-
-
-
+                    
+                    
+                    
                     <section id="bookingsCard">
                         <form method="post" id="seatform" action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" onsubmit="return validateForm();">
                             <div  id="container" class="container">
@@ -344,7 +267,6 @@
                                 <!-- Standard Section -->
                                 <div class="Standard">
                                     <label for="Standard Adult"><b>Standard Adult</b></label>
-
                                     <select type="select" name="seats[STA]" id='seats-STA'>
                                         <option value="" >Select number of tickets...</option>
                                         <option value="1">1</option>
@@ -358,7 +280,6 @@
                                         <option value="9">9</option>
                                         <option value="10">10</option>
                                     </select>
-
                                     <label for="Standard Concession"><b>Standard Concession</b></label>
                                     <select type="select" name="seats[STP]" id='seats-STP'>
                                         <option value="">Select number of tickets...</option>
@@ -373,7 +294,6 @@
                                         <option value="9">9</option>
                                         <option value="10">10</option>
                                     </select>
-
                                     <label for="Standard Child"><b>Standard Child</b></label>
                                     <select type="select" name="seats[STC]" id='seats-STC'>
                                         <option value="">Select number of tickets...</option>
@@ -388,12 +308,10 @@
                                         <option value="9">9</option>
                                         <option value="10">10</option>
                                     </select>
-
                                 </div>
                                 <!-- First Class Section -->
                                 <div class="FirstClass">
                                     <label for="First Class Adult"><b>First Class Adult</b></label>
-
                                     <select type="select" name="seats[FCA]" id='seats-FCA'>
                                         <option value="">Select number of tickets...</option>
                                         <option value="1">1</option>
@@ -407,7 +325,6 @@
                                         <option value="9">9</option>
                                         <option value="10">10</option>
                                     </select>
-
                                     <label for="First Class Concession"><b>First Class Concession</b></label>
                                     <select type="select" name="seats[FCP]" id='seats-FCP'>
                                         <option value="">Select number of tickets...</option>
@@ -422,7 +339,6 @@
                                         <option value="9">9</option>
                                         <option value="10">10</option>
                                     </select>
-
                                     <label for="First Class Child"><b>First Class Child</b></label>
                                     <select type="select" name="seats[FCC]" id='seats-FCC'>
                                         <option value="">Select number of tickets...</option>
@@ -437,14 +353,13 @@
                                         <option value="9">9</option>
                                         <option value="10">10</option>
                                     </select>
-
                                 </div>
                                 <!-- Customer Details -->
                                 <div class="CustomerDetails">
-
-                                    <label for="CustomerDetails"><b>CUSTOMER DETAILS</b></label>
-                                    <br><br>
-
+								
+								<label for="CustomerDetails"><b>CUSTOMER DETAILS</b></label>
+                                <br><br>
+								
                                     <label for="Name"><b>Name</b></label>
                                     <input type="text" name="cust[name]"  id="cust-name" required>
                                     <label for="Email"><b>Email</b></label>
@@ -455,11 +370,11 @@
                                     <input type="text" name="cust[card]" id='cust-card' required>
                                     <label for="Expiry"><b>Expiry</b></label>
                                     <input type="month" name="cust[expiry]" id='cust-expiry' 
-                                           pattern="[0-9]{4}-[0-9]{2}" required>
+                                            pattern="[0-9]{4}-[0-9]{2}" required>
                                 </div>
                                 <hr>
                                 <label><b>Total Amount</b></label>
-                                <input  name="total" id="total" type="text" readonly>
+        <input  name="total" id="total" type="text" readonly>
                                 <br><br>
                                 <button type="submit" class="bookbtn" name="order" value='order' id='bookbtn' >Book Now!</button>
                             </div>
@@ -468,7 +383,6 @@
                 </section>
             </section>
         </main>
-
         <footer>
             <section>
                 <div>&copy;<script>
@@ -478,7 +392,4 @@
             </section>
         </footer>
         <script src="script.js"></script>
-
-    </body>
-</html>
-
+    </b
