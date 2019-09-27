@@ -212,10 +212,15 @@ function validateName() {
     }
 }
 
+//Regex for Credit card
+function validateCC() {
+	
+}
+
+
+
 
 //Regex for Credit Card Expiry 
-
-
 function validateDate()
 {
       //Grab the value from your Textbox
