@@ -241,8 +241,11 @@
                             </div>
                         </div>  
                     </div>
+                    
+                    
+                    
                     <section id="bookingsCard">
-                        <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post" id="seatform" onsubmit="return validateForm()">
+                        <form method="post" id="seatform" action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" onsubmit="return validateForm();">
                             <div  id="container" class="container">
                                 <h1>Book a Movie</h1>
                                 <p>You can view and book the movie you have selected, please choose a time and fill in the required fields to proceed.</p>
@@ -264,8 +267,8 @@
                                 <!-- Standard Section -->
                                 <div class="Standard">
                                     <label for="Standard Adult"><b>Standard Adult</b></label>
-                                    <select type="select" name="seats[STA]" id='seats-STA' onchange="calculateTotal()">
-                                        <option value="">Select number of tickets...</option>
+                                    <select type="select" name="seats[STA]" id='seats-STA'>
+                                        <option value="" >Select number of tickets...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -278,7 +281,7 @@
                                         <option value="10">10</option>
                                     </select>
                                     <label for="Standard Concession"><b>Standard Concession</b></label>
-                                    <select type="select" name="seats[STP]" id='seats-STP' onchange="calculateTotal()">
+                                    <select type="select" name="seats[STP]" id='seats-STP'>
                                         <option value="">Select number of tickets...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -292,7 +295,7 @@
                                         <option value="10">10</option>
                                     </select>
                                     <label for="Standard Child"><b>Standard Child</b></label>
-                                    <select type="select" name="seats[STC]" id='seats-STC' onchange="calculateTotal()">
+                                    <select type="select" name="seats[STC]" id='seats-STC'>
                                         <option value="">Select number of tickets...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -309,7 +312,7 @@
                                 <!-- First Class Section -->
                                 <div class="FirstClass">
                                     <label for="First Class Adult"><b>First Class Adult</b></label>
-                                    <select type="select" name="seats[FCA]" id='seats-FCA' onchange="calculateTotal()">
+                                    <select type="select" name="seats[FCA]" id='seats-FCA'>
                                         <option value="">Select number of tickets...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -323,7 +326,7 @@
                                         <option value="10">10</option>
                                     </select>
                                     <label for="First Class Concession"><b>First Class Concession</b></label>
-                                    <select type="select" name="seats[FCP]" id='seats-FCP' onchange="calculateTotal()">
+                                    <select type="select" name="seats[FCP]" id='seats-FCP'>
                                         <option value="">Select number of tickets...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -337,7 +340,7 @@
                                         <option value="10">10</option>
                                     </select>
                                     <label for="First Class Child"><b>First Class Child</b></label>
-                                    <select type="select" name="seats[FCC]" id='seats-FCC' onchange="calculateTotal()">
+                                    <select type="select" name="seats[FCC]" id='seats-FCC'>
                                         <option value="">Select number of tickets...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -358,7 +361,7 @@
                                 <br><br>
 								
                                     <label for="Name"><b>Name</b></label>
-                                    <input type="text" name="cust[name]" onkeydown="validateName();" id='cust-name' required>
+                                    <input type="text" name="cust[name]"  id="cust-name" required>
                                     <label for="Email"><b>Email</b></label>
                                     <input type="email" name="cust[email]" id='cust-email' required>
                                     <label for="Mobile"><b>Mobile</b></label>
@@ -366,13 +369,14 @@
                                     <label for="Credit Card"><b>Credit Card</b></label>
                                     <input type="text" name="cust[card]" id='cust-card' required>
                                     <label for="Expiry"><b>Expiry</b></label>
-                                    <input type="month" name="cust[expiry]" id='cust-expiry' onchange="validateDate();" required>
+                                    <input type="month" name="cust[expiry]" id='cust-expiry' 
+                                            pattern="[0-9]{4}-[0-9]{2}" required>
                                 </div>
                                 <hr>
                                 <label><b>Total Amount</b></label>
         <input  name="total" id="total" type="text" readonly>
                                 <br><br>
-                                <button type="submit" class="bookbtn" name="order" id='bookbtn' onclick="validate();" >Book Now!</button>
+                                <button type="submit" class="bookbtn" name="order" value='order' id='bookbtn' >Book Now!</button>
                             </div>
                         </form>
                     </section>
@@ -388,5 +392,4 @@
             </section>
         </footer>
         <script src="script.js"></script>
-    </body>
-</html>
+    </b

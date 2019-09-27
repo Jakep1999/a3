@@ -190,90 +190,157 @@ window.addEventListener("load",function() { // when page has loaded
 
 //validation for form fields
 function validateForm() {
-	return validateName;
-	return validateDate;
-	return validateNumber;
+    
+    if (areTicketsBeingBought() == false){
+        console.log("not buying any tickets!")
+        return false;
+    }
+    
+    
+    if (validateCardDate() ==false){
+        console.log('EXP DATE NO GOOD');
+        return false
+    }
+    
+     if(validateCardNumber() == false){
+        console.log("CARD NUMBER NO GOOD")
+         return false;
+    }
+    
+    if (validateName() ==false){
+        console.log('NAME NO GOOD');
+        return false
+    }
+    
+    if (validatePhone() ==false){
+        console.log('MOBILE NUMBER NO GOOD');
+        return false
+    }
+   
+    
+    else{
+        console.log('validateForm is TRUE');
+        return true;
+    }
+
 	
 }
 	
-	
-	//Regex for Name
-function validateName() {
-    var regex = /^[a-zA-Z \-.']{1,100}$/;
-    var name =  document.getElemetnById('cust-name');
 
-    if(!regex.test(name)){
-        alert('Please enter your full name (first & last name).');
+function areTicketsBeingBought(){
+    
+    var StnAdl = document.getElementById('seats-STA').value;
+    var StnChi = document.getElementById('seats-STC').value;
+    var StnPen = document.getElementById('seats-STP').value; 
+    var FCAdl = document.getElementById('seats-FCA').value;  
+    var FCChi = document.getElementById('seats-FCC').value; 
+    var FCPen = document.getElementById('seats-FCP').value; 
+    
+    var totalTickets = StnAdl + StnChi + StnPen + FCAdl + FCChi + FCPen;
+    
+    if (totalTickets == 0){
+        alert("please buy at least one ticket");
+        return false;
+    }
+        
+    
+    
+}
+	
+	//Regex for Name   ---   WORKS!
+function validateName() {
+   
+    // word of 2 to 30 chars, one space, word of 2 to 30 chars
+    var regex = /^(\w{2,30}\s{1}\w{2,30})$/;
+    var name =  document.getElementById('cust-name').value;
+
+    if(regex.test(name)){
+        return true;  
+    }
+    else{
+        alert("First and Last Name ONLY ---Western Name");
         document.getElementById('cust-name').focus();
         return false;
-    }else{
-        alert('Valid name given.');
-        return true;
     }
 }
 
 
+
+function validateCardNumber(){
+    var validExp1 = /^(\d){16}$/;
+    var validExp2 = /^(\d){4}\s{1}(\d){4}\s{1}(\d){4}\s{1}(\d){4}$/;
+    var validExp3 = /^(\d){4}\-{1}(\d){4}\-{1}(\d){4}\-{1}(\d){4}$/;
+    
+    var userCard =  document.getElementById('cust-card').value;
+    if (validExp1.test(userCard))
+        return true;
+    else if (validExp2.test(userCard))
+        return true;
+    else if(validExp3.test(userCard))
+        return true;
+    else{
+        alert("Card must be 16 digits, spaces and dashes allowed between 4ths");
+        document.getElementById('cust-card').focus();
+        return false;
+    }
+    
+}
+
+
 //Regex for Credit Card Expiry 
-
-
-function validateDate()
+function validateCardDate()
 {
 
+    var date = new Date();
+    var currMonth = date.getMonth() +1;
+    var currYear = date.getFullYear();
+    
+    var inputExpiry = document.getElementById('cust-expiry').value;
+    
+    
+    var inputSplit = inputExpiry.split("-");
+    
+    
+    if (inputSplit[0] > currYear)
+    {
+        return true;
+    }
+    
+        if (inputSplit[0] == currYear) 
+            {
+                
+                    if (inputSplit[1] > currMonth)
+                    {
+
+                        return true;
+                    }
+                    else
+                        {
+                            alert("Card EXP must be beyond current month");
+                            document.getElementById('cust-expiry').focus();
+                            return false;
+                        } 
+                }
+    alert("Card EXP not valid");
+    return false;
 }
 
 //Regex for Mobile Number 
-function validateNumber() {
+function validatePhone() {
         var phoneExpression = /^(\(04\)|04|\+614)( ?\d){8}$/;
+        var userPhone = document.getElementById('cust-mobile').value;
 
-        // Valid
-        var phoneNumber1 = "0411234567";
-        var phoneNumber2 = "04 11234567";
-        var phoneNumber3 = "04 1123 4567";
-        var phoneNumber4 = "041123 5678";
-		var phoneNumber5 = "0400 123 456";
-		var phoneNumber6 = "+61400123456";
-
-        // Invalid
-        var phoneNumber7 = "3892 11";
-        var phoneNumber8 = "daniel 0411 234 567";
-        var phoneNumber9 = "jake";
-
-        if (phoneNumber1.match(phoneExpression)) {
-            console.log('Valid 10 digit mobile number with no spaces');
+        if (phoneExpression.test(userPhone)) {
+            return true;
+       
+        }
+    else
+        {
+            alert("Not valid Mobile Number");
+            document.getElementById('cust-mobile').focus();
+            return false;
         }
 
-        if (phoneNumber2.match(phoneExpression)) {
-            console.log('Valid 10 digit mobile number with space after Aus code');
-        }
-
-        if (phoneNumber3.match(phoneExpression)) {
-            console.log('Valid 10 digit mobile number with space after the Aus code');
-        }
-
-        if (phoneNumber4.match(phoneExpression)) {
-            console.log('Valid 10 digit mobile number with a space for the last 4 digits');
-        }
-
-        if (!phoneNumber5.match(phoneExpression)) {
-            console.log('Valid 10 digit code with correct spaces');
-        }
-		
-		if (!phoneNumber6.match(phoneExpression)) {
-            console.log('Valid Mobile phone number starting with australian code');
-        }
-		
-		if (!phoneNumber7.match(phoneExpression)) {
-            console.log('Invalid mobile number');
-        }
-		
-
-        if (!phoneNumber8.match(phoneExpression)) {
-            console.log('A name and space before a valid spaced 10 digit mobile number');
-        }
-
-        if (!phoneNumber9.match(phoneExpression)) {
-            console.log('No valid number entered, a name appears to have been entered instead');
-        }
 }
 
 
