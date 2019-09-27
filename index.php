@@ -6,27 +6,17 @@
 
         <!-- Keep wireframe.css for debugging, add your css to style.css -->
         <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
-
         <!-- my two web fonts  -->
         <link href="https://fonts.googleapis.com/css?family=Hepta+Slab|Montserrat&display=swap" rel="stylesheet"> 
-
-
         <link id='stylecss' type="text/css" rel="stylesheet" href="./style.css">
         <script src='../wireframe.js'></script>
-
-
-
-
     </head>
-
     <body>
-
         <header>
             <div>
                 <img id="CompanyLogo" src="../../media/Lunardo Logo.png" alt="PAGE BANNER">
             </div>
         </header>
-
         <nav>
             <div id="topnav">
                 <ul>
@@ -38,21 +28,15 @@
                 </ul>
             </div>
         </nav>
-
-
-
         <main>
             <section id ="linktoAboutUs">
                 <div class="individualSection">
-
                     <h1>About Us </h1>
-
                     <p>
                         Welcome to Lunardo Cinemas, your first choice and only choice for cinema in the Antarctic region
                         <br>
                         <br>
                         After the recent fires, which tragically took our beloved complex away from us, we are proud to announce we will be <b>REOPENING</b>, but this time <b>BIGGER</b> and <b>BETTER</b>, and with <b>LESS</b> polar bears!
-
                         <br><br>
                         Our upgrades include brand new premium seating for all facilities:
                         <br><br>
@@ -90,10 +74,10 @@
 
 
 
+
             <section id="linktoPrices">
                 <div class="individualSection">
                     <h1>Prices </h1>
-
                     <table>
                         <tr>
                             <th>Seat Type</th>
@@ -141,106 +125,100 @@
 
 
             <section  id="linktoNowShowing">
-
                 <h1>Now Showing</h1>
+                <div class="row">
 
-                <div class="NowShowing">
+                    <div class="column">
+                        <div class="nowShowing_Card" id="moviePanelACT" onclick=showACT()>
+                            <img src="../../media/poster_endgame.jpg" alt="Endgame poster" class="nowShowing_Image">
+
+                            <div class="nowShowing_Content">
+                                <h2>Avengers: Endgame</h2>
+                                <h3> SHOWING:</h3>                                
+                                <p>
+                                    Wed:  9pm (T21)<br>
+                                    Thur: 9pm (T21)<br>
+                                    Fri:  9pm (T21)<br>
+                                    Sat:  6pm (T18)<br>
+                                    Sun:  6pm (T18)<br>
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </div>
 
 
 
-                    <div class="row">
-                        <div class="column">
 
-                            <div class="nowShowing_Card" id="moviePanelACT" onclick=showACT()>
+                    <div class="column">
+                        <div class="nowShowing_Card" id = "moviePanelANM" onclick=showANM()>
+                            <div>
+                                <img src="../../media/poster_dumbo.jpg" alt="Dumbo poster" class="nowShowing_Image">
+                            </div>
+                            <div class="nowShowing_Content">
+                                <h2>Dumbo</h2>
+                                <h3> SHOWING:</h3>
+                                <p>
+                                    Mon:  12pm (T12)<br>
+                                    Tues: 12pm (T12)<br>
+                                    Wed:  6pm (T18)<br>
+                                    Thur: 6pm (T18)<br>
+                                    Fri:  6pm (T18)<br>
+                                    Sat:  6pm (T18)<br>
+                                    Sun:  12pm (T12)<br>
+                                </p>
 
-                                <img src="../../media/poster_endgame.jpg" alt="Endgame poster" class="nowShowing_Image">
+                            </div>
 
-                                <div class="nowShowing_Content">
-                                    <h2>Avengers: Endgame</h2>
-                                    <h3> SHOWING:</h3>                                
-                                    <p>
-                                        Wed:  9pm (T21)<br>
-                                        Thur: 9pm (T21)<br>
-                                        Fri:  9pm (T21)<br>
-                                        Sat:  6pm (T18)<br>
-                                        Sun:  6pm (T18)<br>
-                                    </p>
-                                </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="column">
+                        <div class="nowShowing_Card" id="moviePanelRMC" onclick=showRMC()>
+                            <div>
+                                <img src="../../media/poster_topendwedding.jpg" alt="Top End Wedding poster" class="nowShowing_Image">
+                            </div>
+                            <div class="nowShowing_Content">
+                                <h2>Top End Wedding</h2>
+                                <h3> SHOWING:</h3>
+                                <p>
+                                    Tues: 6pm (T18)<br>
+                                    Sat:  3pm (T15)<br>
+                                    Sun:  3pm (T15)<br>
+                                </p>
 
 
                             </div>
                         </div>
+                    </div>
 
 
 
-                        <div class="column">
-                            <div class="nowShowing_Card" id = "moviePanelANM" onclick=showANM()>
-                                <div>
-                                    <img src="../../media/poster_dumbo.jpg" alt="Dumbo poster" class="nowShowing_Image">
-                                </div>
-                                <div class="nowShowing_Content">
-                                    <h2>Dumbo</h2>
-                                    <h3> SHOWING:</h3>
-                                    <p>
-                                        Mon:  12pm (T12)<br>
-                                        Tues: 12pm (T12)<br>
-                                        Wed:  6pm (T18)<br>
-                                        Thur: 6pm (T18)<br>
-                                        Fri:  6pm (T18)<br>
-                                        Sat:  6pm (T18)<br>
-                                        Sun:  12pm (T12)<br>
-                                    </p>
-
-                                </div>
-
+                    <div class="column">
+                        <div class="nowShowing_Card" id="moviePanelAHF"onclick=showAHF()>
+                            <div>
+                                <img src="../../media/poster_thehappyprince.jpg" alt="The Happy Prince poster" class="nowShowing_Image">
                             </div>
-                        </div>
 
-
-
-                        <div class="column">
-                            <div class="nowShowing_Card" id="moviePanelRMC" onclick=showRMC()>
-                                <div>
-                                    <img src="../../media/poster_topendwedding.jpg" alt="Top End Wedding poster" class="nowShowing_Image">
-                                </div>
-                                <div class="nowShowing_Content">
-                                    <h2>Top End Wedding</h2>
-                                    <h3> SHOWING:</h3>
-                                    <p>
-                                        Tues: 6pm (T18)<br>
-                                        Sat:  3pm (T15)<br>
-                                        Sun:  3pm (T15)<br>
-                                    </p>
-
-
-                                </div>
+                            <div class="nowShowing_Content">
+                                <h2>The Happy Prince</h2>
+                                <h3> SHOWING:</h3>
+                                <p>
+                                    Wed:  12pm (T12)<br>
+                                    Thur: 12pm (T12)<br>
+                                    Fri:  12pm (T12)<br>
+                                    Sat:  9pm (T21)<br>
+                                    Sun:  9pm (T21)<br>
+                                </p>
                             </div>
-                        </div>
-
-
-
-                        <div class="column">
-                            <div class="nowShowing_Card" id="moviePanelAHF"onclick=showAHF()>
-                                <div>
-                                    <img src="../../media/poster_thehappyprince.jpg" alt="The Happy Prince poster" class="nowShowing_Image">
-                                </div>
-
-                                <div class="nowShowing_Content">
-                                    <h2>The Happy Prince</h2>
-                                    <h3> SHOWING:</h3>
-                                    <p>
-                                        Wed:  12pm (T12)<br>
-                                        Thur: 12pm (T12)<br>
-                                        Fri:  12pm (T12)<br>
-                                        Sat:  9pm (T21)<br>
-                                        Sun:  9pm (T21)<br>
-                                    </p>
-                                </div>
 
 
 
 
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -342,15 +320,13 @@
 
 
 
+
                     <section id="bookingsCard">
-
-                        <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post" id="seatform" onsubmit="return false;">
-
-                            <div class="container">
+                        <form method="post" id="seatform" action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" onsubmit="return validateForm();">
+                            <div  id="container" class="container">
                                 <h1>Book a Movie</h1>
                                 <p>You can view and book the movie you have selected, please choose a time and fill in the required fields to proceed.</p>
                                 <hr>
-
                                 <br>
                                 <label for="Movie ID"><b>Movie ID: </b></label>
                                 <input type="hidden"  name="movie[id]" id='movie-id' value="">
@@ -368,8 +344,9 @@
                                 <!-- Standard Section -->
                                 <div class="Standard">
                                     <label for="Standard Adult"><b>Standard Adult</b></label>
-                                    <select type="select" name="seats[STA]" id='seats-STA' onchange="calculateTotal()">
-                                        <option value="ticketNumber">Select number of tickets...</option>
+
+                                    <select type="select" name="seats[STA]" id='seats-STA'>
+                                        <option value="" >Select number of tickets...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -382,11 +359,9 @@
                                         <option value="10">10</option>
                                     </select>
 
-
-
                                     <label for="Standard Concession"><b>Standard Concession</b></label>
-                                    <select type="select" name="seats[STP]" id='seats-STP' onchange="calculateTotal()">
-                                        <option value="ticketNumber">Select number of tickets...</option>
+                                    <select type="select" name="seats[STP]" id='seats-STP'>
+                                        <option value="">Select number of tickets...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -400,8 +375,8 @@
                                     </select>
 
                                     <label for="Standard Child"><b>Standard Child</b></label>
-                                    <select type="select" name="seats[STC]" id='seats-STC' onchange="calculateTotal()">
-                                        <option value="ticketNumber">Select number of tickets...</option>
+                                    <select type="select" name="seats[STC]" id='seats-STC'>
+                                        <option value="">Select number of tickets...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -418,8 +393,9 @@
                                 <!-- First Class Section -->
                                 <div class="FirstClass">
                                     <label for="First Class Adult"><b>First Class Adult</b></label>
-                                    <select type="select" name="seats[FCA]" id='seats-FCA' onchange="calculateTotal()">
-                                        <option value="ticketNumber">Select number of tickets...</option>
+
+                                    <select type="select" name="seats[FCA]" id='seats-FCA'>
+                                        <option value="">Select number of tickets...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -433,8 +409,8 @@
                                     </select>
 
                                     <label for="First Class Concession"><b>First Class Concession</b></label>
-                                    <select type="select" name="seats[FCP]" id='seats-FCP' onchange="calculateTotal()">
-                                        <option value="ticketNumber">Select number of tickets...</option>
+                                    <select type="select" name="seats[FCP]" id='seats-FCP'>
+                                        <option value="">Select number of tickets...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -448,8 +424,8 @@
                                     </select>
 
                                     <label for="First Class Child"><b>First Class Child</b></label>
-                                    <select type="select" name="seats[FCC]" id='seats-FCC' onchange="calculateTotal()">
-                                        <option value="ticketNumber">Select number of tickets...</option>
+                                    <select type="select" name="seats[FCC]" id='seats-FCC'>
+                                        <option value="">Select number of tickets...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -463,54 +439,35 @@
                                     </select>
 
                                 </div>
-
                                 <!-- Customer Details -->
                                 <div class="CustomerDetails">
-                                    <label for="Name"><b>Name</b></label>
-                                    <input type="text" name="cust[name]" id='cust-name' required>
 
+                                    <label for="CustomerDetails"><b>CUSTOMER DETAILS</b></label>
+                                    <br><br>
+
+                                    <label for="Name"><b>Name</b></label>
+                                    <input type="text" name="cust[name]"  id="cust-name" required>
                                     <label for="Email"><b>Email</b></label>
                                     <input type="email" name="cust[email]" id='cust-email' required>
-
                                     <label for="Mobile"><b>Mobile</b></label>
                                     <input type="tel" name="cust[mobile]" id='cust-mobile' required>
-
                                     <label for="Credit Card"><b>Credit Card</b></label>
                                     <input type="text" name="cust[card]" id='cust-card' required>
-
                                     <label for="Expiry"><b>Expiry</b></label>
-                                    <input type="month" name="cust[expiry]" id='cust-expiry' required>
-
+                                    <input type="month" name="cust[expiry]" id='cust-expiry' 
+                                           pattern="[0-9]{4}-[0-9]{2}" required>
                                 </div>
-
-
                                 <hr>
-
-                                <p id="total"></p>
+                                <label><b>Total Amount</b></label>
+                                <input  name="total" id="total" type="text" readonly>
                                 <br><br>
-
-                                <button type="submit" value="submit" class="bookbtn" name="order" id='bookbtn' >Book Now!</button>
+                                <button type="submit" class="bookbtn" name="order" value='order' id='bookbtn' >Book Now!</button>
                             </div>
-
-
                         </form>
-
-
-
-
-
-
-
                     </section>
                 </section>
             </section>
-
-   
         </main>
-
-
-
-
 
         <footer>
             <section>
@@ -521,5 +478,7 @@
             </section>
         </footer>
         <script src="script.js"></script>
+
     </body>
 </html>
+
