@@ -19,9 +19,9 @@
         <nav>
             <div id="topnav">
                 <ul>
-                    <li><a href="#linktoAboutUs">About Us</a></li>
-                    <li><a href="#linktoPrices">Prices</a></li>
-                    <li><a href="#linktoNowShowing">Now Showing</a></li>
+                    <li><a id="lunAUlink" href="#linktoAboutUs">About Us</a></li>
+                    <li><a id="lunPlink"href="#linktoPrices">Prices</a></li>
+                    <li><a id="lunNSlink" href="#linktoNowShowing">Now Showing</a></li>
                     <li><a href="../index.html">Back to A1</a></li>
                 </ul>
             </div>
@@ -170,7 +170,7 @@
                         </div>
                     </div>
                 </div>
-                <section  id="linktoSynopsis">
+                <div  id="linktoSynopsis">
                     <div id="synopsis_Card">
                         <div id="synopsisACT">
                             <h2>Avengers: Endgame - [MA15+]</h2>
@@ -244,7 +244,7 @@
                     
                     
                     
-                    <section id="bookingsCard">
+                    <div id="bookingsCard">
                         <form method="post" id="seatform" action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" onsubmit="return validateForm();">
                             <div  id="container" class="container">
                                 <h1>Book a Movie</h1>
@@ -379,8 +379,8 @@
                                 <button type="submit" class="bookbtn" name="order" value='order' id='bookbtn' >Book Now!</button>
                             </div>
                         </form>
-                    </section>
-                </section>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>

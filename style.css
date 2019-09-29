@@ -131,11 +131,12 @@ header {
 #topnav a:hover {
     background-color: #99738E;
     color: black;
+    transition: :0.3s;
 }
 
 .active {
     background-color: #553d67;
-
+    transition: :0.3s;
     color: white;
 }
 

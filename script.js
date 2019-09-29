@@ -1,4 +1,25 @@
 /* Insert your javascript here */
+var movieIDs= ["ACT", "ANM", "RMC", "AHF"];
+var movieDAYs = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
+var movieHOURs = ["T12", "T15", "T18", "T21"];
+
+var seat_prices = {
+  "STA": 19.80,
+  "STP": 17.50,
+  "STC": 15.30,
+  "FCA": 30.00,
+  "FCP": 27.00,
+  "FCC": 24.00
+}
+
+var discountseat_prices = {
+  "STA": 14.00,
+  "STP": 12.50,
+  "STC": 11.00,
+  "FCA": 24.00,
+  "FCP": 22.50,
+  "FCC": 21.00
+}
 
 
 function showACT() {
@@ -94,10 +115,6 @@ function showAHF() {
 
 function book(id, day, time) {
     
-    var movieIDs= ["ACT", "ANM", "RMC", "AHF"];
-    var movieDAYs = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
-    var movieHOURs = ["T12", "T15", "T18", "T21"];
-    
     document.getElementById("bookingsCard").style.display = 'block';
     
     
@@ -115,68 +132,75 @@ function book(id, day, time) {
 
 
 /* scroll changes active links */
-let mainNavLinks = document.querySelectorAll("nav ul li a");
-let mainSections = document.querySelectorAll("main section");
-let lastId;
-let cur = [];
 
-window.addEventListener("scroll", event => {
-  let fromTop = window.scrollY;
-
-  mainNavLinks.forEach(link => {
-    let section = document.querySelector(link.hash);
-
-    if (
-      section.offsetTop <= fromTop &&
-      section.offsetTop + section.offsetHeight > fromTop
-    ) {
-      link.classList.add("active");
-    } else {
-      link.classList.remove("active");
+window.onscroll = function() {
+    
+    var winPos = window.scrollY;
+    
+    console.clear();
+    console.log("WinY: " + winPos);
+    var sections = document.getElementsByTagName('main')[0].getElementsByTagName('section');
+    //console.log(sections);
+    var navlinks = document.getElementsByTagName('nav')[0].getElementsByTagName('a');
+    //console.log(navlinks);
+      
+    var aboutUsOffset = sections[0].offsetTop;
+    console.log("About Us Offset: " + aboutUsOffset);
+    
+    var pricesOffset = sections[1].offsetTop;
+    console.log("Prices Offset: " + pricesOffset);
+    
+    var nowShowingOffset = sections[2].offsetTop;
+    console.log("Now Showing Offset: " + nowShowingOffset);
+    
+    
+    
+    if (winPos < aboutUsOffset){
+        console.log("no active link");
+        document.getElementById("lunAUlink").className = "";
+        }
+    
+    if (winPos >= aboutUsOffset && winPos < pricesOffset){
+        console.log("About Us ACTIVE");
+        document.getElementById("lunPlink").className = "";
+        document.getElementById("lunAUlink").className = "active";
     }
-  });
-});
-
-
-
-
-var seat_prices = {
-  "STA": 19.80,
-  "STP": 17.50,
-  "STC": 15.30,
-  "FCA": 30.00,
-  "FCP": 27.00,
-  "FCC": 24.00
+    if (winPos >= pricesOffset && winPos < nowShowingOffset){
+        console.log("Prices ACTIVE");
+        document.getElementById("lunAUlink").className = "";
+        document.getElementById("lunPlink").className = "active";
+        document.getElementById("lunNSlink").className = "";
+    }
+    if (winPos >= nowShowingOffset){
+        console.log("NowShowing Us ACTIVE");
+        document.getElementById("lunPlink").className = "";
+        document.getElementById("lunNSlink").className = "active";
+    }
+    
+    
 }
 
-var discountseat_prices = {
-  "STA": 14.00,
-  "STP": 12.50,
-  "STC": 11.00,
-  "FCA": 24.00,
-  "FCP": 22.50,
-  "FCC": 21.00
-}
-	
-	
-	/* function discount() {
-if (date.getDay()>0 && date.getDay() <6 && hour === "[T12]") give discount */
 
+
+//LOAD TOTAL PRICE
 
 window.addEventListener("load",function() { // when page has loaded
   document.getElementById("container").addEventListener("change",function(e) {
 
+      var workingSeat_prices = seat_prices;
+      
+    //see if discount
+    if (isDiscountedTickets() == true) {
+      workingSeat_prices = discountseat_prices;
+      }
+      
+      
     var tgt = e.target; // whatever was changed
   if (tgt.tagName==="SELECT") {
       var total = 0;
-      Object.keys(seat_prices).forEach(function(key) { // get the keys from the object
+      Object.keys(seat_prices).forEach(function(key) { // get the keys from the object  DO ICHANGE THIS?
         var val = document.getElementById("seats-"+key).value;
-        total += val==="ticketNumber"?0: val*seat_prices[key]; // gets the amount
-		
-	  /* else if ((movieDAYs == "MON", "TUE", "WED", "THU", "FRI"  && movieHOURs == ["T12"])) {
-		Object.keys(discountseat_prices).forEach(function(key) { // get the keys from the object
-        var val = document.getElementById("seats-"+key).value;
-        total += val==="ticketNumber"?0: val*discountseat_prices[key]; // gets the amount */
+        total += val==="ticketNumber"?0: val*workingSeat_prices[key]; // gets the amount
 			
       })
       document.getElementById("total").value=total.toFixed(2); // shows result with two decimals
@@ -185,7 +209,30 @@ window.addEventListener("load",function() { // when page has loaded
 })
   
 
-
+function isDiscountedTickets()
+{
+    var theMovieDay = document.getElementById("movie-day").value; 
+    console.log(theMovieDay);
+    
+    var theMovieHour = document.getElementById("movie-hour").value;
+    console.log(theMovieHour);
+    
+    
+    if (theMovieDay == movieDAYs[0] || theMovieDay == movieDAYs[2])
+        {
+               console.log('its a discounted ticket! MON OR WED');
+            return true;
+        }
+    
+    if (theMovieDay == movieDAYs[1] || theMovieDay == movieDAYs[3] || theMovieDay == movieDAYs[4])
+        if( theMovieHour == movieHOURs[0]){
+               console.log('its a discounted ticket! TUE/THU/FRI T12');
+            return true;
+        }
+    
+    
+    return false;
+}
 
 
 //validation for form fields
@@ -290,7 +337,7 @@ function validateCardNumber(){
 //Regex for Credit Card Expiry 
 function validateCardDate()
 {
-
+    
     var date = new Date();
     var currMonth = date.getMonth() +1;
     var currYear = date.getFullYear();
