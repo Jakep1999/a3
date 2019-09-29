@@ -137,42 +137,42 @@ window.onscroll = function() {
     
     var winPos = window.scrollY;
     
-    console.clear();
-    console.log("WinY: " + winPos);
+    //console.clear();
+    //console.log("WinY: " + winPos);
     var sections = document.getElementsByTagName('main')[0].getElementsByTagName('section');
     //console.log(sections);
     var navlinks = document.getElementsByTagName('nav')[0].getElementsByTagName('a');
     //console.log(navlinks);
       
     var aboutUsOffset = sections[0].offsetTop;
-    console.log("About Us Offset: " + aboutUsOffset);
+    //console.log("About Us Offset: " + aboutUsOffset);
     
     var pricesOffset = sections[1].offsetTop;
-    console.log("Prices Offset: " + pricesOffset);
+    //console.log("Prices Offset: " + pricesOffset);
     
     var nowShowingOffset = sections[2].offsetTop;
-    console.log("Now Showing Offset: " + nowShowingOffset);
+    //console.log("Now Showing Offset: " + nowShowingOffset);
     
     
     
     if (winPos < aboutUsOffset){
-        console.log("no active link");
+        //console.log("no active link");
         document.getElementById("lunAUlink").className = "";
         }
     
     if (winPos >= aboutUsOffset && winPos < pricesOffset){
-        console.log("About Us ACTIVE");
+        //console.log("About Us ACTIVE");
         document.getElementById("lunPlink").className = "";
         document.getElementById("lunAUlink").className = "active";
     }
     if (winPos >= pricesOffset && winPos < nowShowingOffset){
-        console.log("Prices ACTIVE");
+        //console.log("Prices ACTIVE");
         document.getElementById("lunAUlink").className = "";
         document.getElementById("lunPlink").className = "active";
         document.getElementById("lunNSlink").className = "";
     }
     if (winPos >= nowShowingOffset){
-        console.log("NowShowing Us ACTIVE");
+        //console.log("NowShowing Us ACTIVE");
         document.getElementById("lunPlink").className = "";
         document.getElementById("lunNSlink").className = "active";
     }
