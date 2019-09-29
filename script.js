@@ -203,7 +203,7 @@ window.addEventListener("load",function() { // when page has loaded
         total += val==="ticketNumber"?0: val*workingSeat_prices[key]; // gets the amount
 			
       })
-      document.getElementById("total").value=total.toFixed(2); // shows result with two decimals
+      document.getElementById("total").value="$" + total.toFixed(2); // shows result with two decimals
     }
   })
 })
