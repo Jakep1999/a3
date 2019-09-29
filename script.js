@@ -144,13 +144,13 @@ window.onscroll = function() {
     var navlinks = document.getElementsByTagName('nav')[0].getElementsByTagName('a');
     //console.log(navlinks);
       
-    var aboutUsOffset = sections[0].offsetTop;
+    var aboutUsOffset = sections[0].offsetTop -15;
     //console.log("About Us Offset: " + aboutUsOffset);
     
-    var pricesOffset = sections[1].offsetTop;
+    var pricesOffset = sections[1].offsetTop -15;
     //console.log("Prices Offset: " + pricesOffset);
     
-    var nowShowingOffset = sections[2].offsetTop;
+    var nowShowingOffset = sections[2].offsetTop -15;
     //console.log("Now Showing Offset: " + nowShowingOffset);
     
     
